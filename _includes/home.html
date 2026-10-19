@@ -1,0 +1,71 @@
+{%- assign zh = include.zh -%}
+<section class="hero">
+  <div class="container hero-grid">
+    <div>
+      <p class="eyebrow eyebrow-caps">{% if zh %}你好，我是{% else %}Hello, I'm{% endif %}</p>
+      <h1 class="display">Lihua Lan.</h1>
+      <p class="subtitle">{% if zh %}软件工程师 · AI 与信息检索 · VR{% else %}Software Engineer · AI &amp; Information Retrieval · VR{% endif %}</p>
+      <p class="intro">{% if zh %}有 4 年以上金融科技经验的软件工程师，目前在加州州立大学长滩分校（CSULB）攻读计算机科学硕士，同时在 CSULB XR Lab 开发 VR 体验。这里是我的作品集，也记录我的学习笔记。{% else %}Software engineer with 4+ years in FinTech, now pursuing an M.S. in Computer Science at CSULB with a focus on AI and information retrieval. I also build VR experiences at the CSULB XR Lab. This is my portfolio and where I keep my notes.{% endif %}</p>
+      <div class="actions">
+        <a class="btn btn-dark" href="{{ '/cv/' | relative_url }}">{% if zh %}简历{% else %}Resume{% endif %}</a>
+        <a class="btn" href="{{ '/contact/' | relative_url }}">{% if zh %}联系我{% else %}Contact Me{% endif %}</a>
+      </div>
+      <p class="status">{% if zh %}正在寻找新的工作机会{% else %}Available for new opportunities{% endif %}</p>
+    </div>
+    <div class="hero-art" aria-hidden="true"></div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="section-head">
+      <div>
+        <p class="eyebrow">{% if zh %}作品{% else %}Portfolio{% endif %}</p>
+        <h2 class="h2">{% if zh %}精选项目{% else %}Featured Projects{% endif %}</h2>
+      </div>
+      <a class="view-all" href="{{ '/projects/' | relative_url }}">{% if zh %}查看全部{% else %}View all{% endif %} {% include icon.html name="arrow" %}</a>
+    </div>
+    <div class="stack">
+      {%- for p in site.data.projects limit: 3 %}
+      {% include project-card.html p=p %}
+      {%- endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="section-head">
+      <div>
+        <p class="eyebrow">{% if zh %}硕士课程{% else %}M.S. Computer Science{% endif %}</p>
+        <h2 class="h2">{% if zh %}课程项目{% else %}Master Course Projects{% endif %}</h2>
+      </div>
+      <a class="view-all" href="{{ '/courses/' | relative_url }}">{% if zh %}查看全部{% else %}View all{% endif %} {% include icon.html name="arrow" %}</a>
+    </div>
+    <div class="grid-3">
+      {%- assign active = site.data.courses | where_exp: "c", "c.items.size > 0" -%}
+      {%- for c in active limit: 3 %}
+      {% include course-card.html c=c %}
+      {%- endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="section-head">
+      <div>
+        <p class="eyebrow">Blog</p>
+        <h2 class="h2">{% if zh %}最新文章{% else %}Recent Posts{% endif %}</h2>
+      </div>
+      <a class="view-all" href="{{ '/blog/' | relative_url }}">{% if zh %}查看全部{% else %}View all{% endif %} {% include icon.html name="arrow" %}</a>
+    </div>
+    <div class="grid-3">
+      {%- for post in site.posts limit: 3 %}
+      {% include post-card.html post=post %}
+      {%- endfor %}
+    </div>
+  </div>
+</section>
+
+{% include cta.html zh=zh %}

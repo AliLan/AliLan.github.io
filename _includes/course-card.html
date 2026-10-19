@@ -1,0 +1,7 @@
+{%- assign c = include.c -%}
+<a class="card post-card" href="{{ '/courses/' | append: c.slug | append: '/' | relative_url }}">
+  <ul class="chips"><li class="chip">{% if c.items.size > 0 %}{{ c.items.size }} item{% if c.items.size > 1 %}s{% endif %}{% else %}Coming soon{% endif %}</li></ul>
+  <h3 class="card-title">{{ c.name }}</h3>
+  <p class="card-desc">{% if c.items.size > 0 %}{{ c.items | map: "title" | join: " · " }}{% else %}Nothing posted yet.{% endif %}</p>
+  <div class="meta"><span>View course {% include icon.html name="arrow" %}</span></div>
+</a>

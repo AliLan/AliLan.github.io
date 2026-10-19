@@ -1,0 +1,8 @@
+- group: AI & Machine Learning
+  items: [BM25, BGE Embeddings, Reciprocal Rank Fusion, Cross-encoder Re-ranking, KNN, Collaborative Filtering]
+- group: Languages
+  items: [Java, Python, SQL, JavaScript, C++, C#]
+- group: Frameworks & Data
+  items: [Spring Cloud, Kafka, React, REST APIs, MySQL, Oracle, Neo4j, MongoDB]
+- group: Tools
+  items: [Docker, Git, Unity3D, Blender]

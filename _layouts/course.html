@@ -1,40 +1,29 @@
 ---
 layout: default
 ---
-{% assign c = site.data.courses | where: "slug", page.course | first %}
-<div class="course-page">
-  <p class="course-back"><a href="{{ '/courses/' | relative_url }}">← All courses</a></p>
-  <h1>{{ c.emoji }} {{ c.name }}</h1>
-
-  {% if c.items.size > 0 %}
-  <div class="course-items">
-    {% for it in c.items %}
-    <article class="course-item">
-      <h2>{{ it.title }}</h2>
-      {% if it.summary %}<p>{{ it.summary }}</p>{% endif %}
-      <div class="course-links">
-        {% if it.link %}<a href="{{ it.link | relative_url }}">Open →</a>{% endif %}
-        {% if it.pdf %}<a href="{{ it.pdf | relative_url }}">Read PDF →</a>{% endif %}
-        {% if it.repo %}<a href="{{ it.repo }}">Code →</a>{% endif %}
+{%- assign c = site.data.courses | where: "slug", page.course | first -%}
+<div class="container">
+  <header class="page-head">
+    <a class="back" href="{{ '/courses/' | relative_url }}">← All courses</a>
+    <h1 class="page-title">{{ c.name }}</h1>
+    <p class="page-sub">Master course projects · CSULB</p>
+  </header>
+  {%- if c.items.size > 0 %}
+  <div class="stack">
+    {%- for it in c.items %}
+    <article class="card">
+      <h3 class="card-title">{{ it.title }}</h3>
+      {%- if it.summary %}<p class="card-desc">{{ it.summary }}</p>{% endif %}
+      <div class="links">
+        {%- if it.link %}<a href="{{ it.link | relative_url }}">{% include icon.html name="external" %}Open</a>{% endif %}
+        {%- if it.pdf %}<a href="{{ it.pdf | relative_url }}">{% include icon.html name="file" %}Read PDF</a>{% endif %}
+        {%- if it.repo %}<a href="{{ it.repo }}">{% include icon.html name="code" %}Source Code</a>{% endif %}
       </div>
     </article>
-    {% endfor %}
+    {%- endfor %}
   </div>
-  {% else %}
-  <p class="course-empty">Nothing here yet. Check back soon.</p>
-  {% endif %}
-
+  {%- else %}
+  <div class="empty">Nothing here yet. Check back soon.</div>
+  {%- endif %}
   {{ content }}
 </div>
-
-<style>
-.course-page { max-width: 900px; margin: 0 auto; padding: 2rem 0 3rem; }
-.course-back a { color: #5ac8fa; text-decoration: none; }
-.course-items { display: grid; gap: 1.2rem; margin-top: 1.5rem; }
-.course-item { background: #fff; border-radius: 1.2rem; padding: 1.3rem 1.5rem; box-shadow: 0 4px 24px rgba(0,0,0,0.08); border-left: 5px solid #ff6b9d; }
-.course-item h2 { font-size: 1.3rem; margin: 0 0 0.4rem; }
-.course-item p { color: #444; margin: 0 0 0.7rem; }
-.course-links { display: flex; gap: 1rem; }
-.course-links a { font-weight: 600; color: #ff6b9d; text-decoration: none; }
-.course-empty { color: #888; font-style: italic; margin-top: 1.5rem; }
-</style>

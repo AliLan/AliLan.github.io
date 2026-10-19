@@ -1,0 +1,23 @@
+{%- assign p = include.p -%}
+<article class="card" data-tags="{{ p.tags | join: '|' | escape }}" data-text="{{ p.title | append: ' ' | append: p.summary | append: ' ' | append: p.tags | join: ' ' | downcase | escape }}">
+  {%- if p.video and p.video != "" %}
+  <div class="card-media">
+    {%- if p.video contains "youtube.com" or p.video contains "youtu.be" or p.video contains "vimeo.com" %}
+    <iframe src="{{ p.video }}" title="{{ p.title }} demo video" allowfullscreen loading="lazy"></iframe>
+    {%- else %}
+    <video src="{{ p.video | relative_url }}" controls preload="metadata"></video>
+    {%- endif %}
+  </div>
+  {%- endif %}
+  <h3 class="card-title">{{ p.title }}</h3>
+  <p class="card-desc">{{ p.summary }}</p>
+  <ul class="chips">
+    {%- for t in p.tags limit: 5 %}<li class="chip">{{ t }}</li>{% endfor %}
+    {%- if p.tags.size > 5 %}<li class="chip">+{{ p.tags.size | minus: 5 }}</li>{% endif %}
+  </ul>
+  <div class="links">
+    {%- if p.link %}<a href="{{ p.link | relative_url }}">{% include icon.html name="external" %}Live Demo</a>{% endif %}
+    {%- if p.repo and p.repo != "" %}<a href="{{ p.repo }}">{% include icon.html name="code" %}Source Code</a>{% endif %}
+    {%- if p.video == nil or p.video == "" %}<span class="muted" style="display:inline-flex;align-items:center;gap:6px">{% include icon.html name="play" %}Video coming soon</span>{% endif %}
+  </div>
+</article>

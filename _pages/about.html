@@ -1,0 +1,110 @@
+---
+layout: default
+title: About Me
+permalink: /about/
+---
+<div class="container">
+  <header class="page-head">
+    <h1 class="page-title">About Me</h1>
+    <p class="page-sub">My skills, professional experience, research, and education. Full details are in my <a href="{{ '/cv/' | relative_url }}" style="text-decoration:underline">CV</a>.</p>
+  </header>
+
+  <div class="about-grid">
+    <div class="profile">
+      <div class="avatar">{% if site.data.profile.photo %}<img src="{{ site.data.profile.photo | relative_url }}" alt="Lihua Lan">{% else %}LL{% endif %}</div>
+      <p>M.S. Computer Science</p>
+      <p>CSULB · XR Lab</p>
+      <div class="icons">
+        <a href="mailto:lihualan2025@gmail.com" aria-label="Email">{% include icon.html name="mail" %}</a>
+        <a href="https://github.com/AliLan" aria-label="GitHub">{% include icon.html name="github" %}</a>
+        <a href="https://www.linkedin.com/in/lihualan" aria-label="LinkedIn">{% include icon.html name="linkedin" %}</a>
+      </div>
+    </div>
+    <div class="bio">
+      <h2>Hi, I'm Lihua Lan</h2>
+      <p>I'm a software engineer based in Los Angeles with 4+ years of experience in FinTech. At Rural Commercial Bank of Fuzhou, I led development of a corporate lending platform on Java, Spring Cloud, and Kafka that supports 110,000+ customers, and built an intelligent accounting platform used by 2,500+ retail merchants.</p>
+      <p>I'm now pursuing an M.S. in Computer Science at California State University, Long Beach, focusing on AI and information retrieval. My research on hybrid AI-based question answering for requirement analysis, combining BM25, BGE embeddings, Reciprocal Rank Fusion, and cross-encoder re-ranking, was presented at SEET 2026.</p>
+      <p>At the CSULB XR Lab, I use AI-assisted workflows in Blender, Unity3D, and C# to prototype interactive VR applications, including a Food Label guide and a Virtual Mosque experience.</p>
+    </div>
+  </div>
+
+  <h2 class="block-title">Skills</h2>
+  <div class="tabs" role="tablist">
+    {%- for g in site.data.skills %}<button class="tab{% if forloop.first %} active{% endif %}" type="button" data-group="{{ forloop.index }}">{{ g.group }}</button>{% endfor %}
+  </div>
+  {%- for g in site.data.skills %}
+  <div class="skill-grid" data-group="{{ forloop.index }}"{% unless forloop.first %} hidden{% endunless %}>{% for s in g.items %}<div class="skill">{{ s }}</div>{% endfor %}</div>
+  {%- endfor %}
+
+  <h2 class="block-title">Experience</h2>
+  <div class="timeline">
+    <article class="card entry">
+      <div class="entry-head">
+        <div><h3>CSULB XR Lab – Academic Technology Services</h3><p class="role">XR Student Assistant</p></div>
+        <div class="when">Jan 2026 – May 2027<br>Long Beach, CA</div>
+      </div>
+      <ul>
+        <li>Leveraged AI-assisted workflows (MCP) in Blender, Unity3D, and C# to rapidly prototype interactive VR applications, including a Food Label guide and a Virtual Mosque experience.</li>
+      </ul>
+    </article>
+    <article class="card entry">
+      <div class="entry-head">
+        <div><h3>Rural Commercial Bank of Fuzhou</h3><p class="role">Software Engineer</p></div>
+        <div class="when">Apr 2020 – Aug 2024<br>Fuzhou, China</div>
+      </div>
+      <ul>
+        <li>Led development of a corporate lending platform using Java, Spring Cloud, and Kafka, supporting 110,000+ customers and contributing to RMB 340M+ in loan volume.</li>
+        <li>Designed and delivered a credit product application system using React and Java, streamlining lending workflows and contributing to more than RMB 10M in additional profit.</li>
+        <li>Built an intelligent accounting platform serving 2,500+ retail merchants, automating financial workflows and supporting approximately RMB 176M in deposits.</li>
+        <li>Built data integration and reporting workflows across Oracle and MySQL for financial analytics and operational reporting.</li>
+      </ul>
+    </article>
+  </div>
+
+  <h2 class="block-title">Research</h2>
+  <article class="card entry">
+    <div class="entry-head">
+      <div><h3>Enhancing Requirement Analysis with Hybrid AI-Based Question Answering Systems</h3><p class="role">Co-author and presenter</p></div>
+      <div class="when">SEET 2026</div>
+    </div>
+    <ul>
+      <li>Hybrid lexical and semantic retrieval with BM25, BGE embeddings, Reciprocal Rank Fusion (RRF), and cross-encoder re-ranking.</li>
+      <li>Evaluated on 387 requirement QA pairs: up to 13.3% higher retrieval recall and better nDCG ranking quality.</li>
+    </ul>
+  </article>
+
+  <h2 class="block-title">Education</h2>
+  <div class="timeline">
+    <article class="card entry">
+      <div class="entry-head">
+        <div><h3>California State University, Long Beach</h3><p class="role">Master of Science in Computer Science</p></div>
+        <div class="when">Jan 2026 – Dec 2027<br>Long Beach, CA</div>
+      </div>
+    </article>
+    <article class="card entry">
+      <div class="entry-head">
+        <div><h3>Central China Normal University</h3><p class="role">Bachelor of Computer Science and Technology</p></div>
+        <div class="when">Sep 2016 – Jun 2020<br>Wuhan, China</div>
+      </div>
+    </article>
+  </div>
+
+  <h2 class="block-title">Honors &amp; Awards</h2>
+  <div class="timeline">
+    <article class="card entry"><div class="entry-head"><div><h3>National First Prize, Chinese Collegiate Computing Competition</h3><p class="role">Software Design</p></div><div class="when">2019</div></div></article>
+    <article class="card entry"><div class="entry-head"><div><h3>National First Prize, China Robot Competition</h3><p class="role">Humanoid Robotics</p></div><div class="when">2017</div></div></article>
+  </div>
+</div>
+
+<script>
+(function () {
+  var tabs = document.querySelectorAll('.tab');
+  var grids = document.querySelectorAll('.skill-grid');
+  tabs.forEach(function (t) {
+    t.addEventListener('click', function () {
+      tabs.forEach(function (x) { x.classList.toggle('active', x === t); });
+      grids.forEach(function (g) { g.hidden = g.dataset.group !== t.dataset.group; });
+    });
+  });
+})();
+</script>

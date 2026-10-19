@@ -9,12 +9,10 @@
 
 - slug: advanced-algorithms
   name: Advanced Algorithms
-  emoji: 🧠
   items: []
 
 - slug: semantic-web
   name: Semantic Web
-  emoji: 🕸️
   items:
     - title: cornercase
       summary: Semantic Web course project.
@@ -22,7 +20,6 @@
 
 - slug: advanced-software-technology
   name: Advanced Software Technology
-  emoji: 🛠️
   items:
     - title: Enhancing Requirement Analysis with Hybrid AI-Based Question Answering Systems
       summary: >-
@@ -33,17 +30,14 @@
 
 - slug: advanced-programming-languages
   name: Advanced Programming Languages
-  emoji: 🔤
   items: []
 
 - slug: advanced-artificial-intelligence
   name: Advanced Artificial Intelligence
-  emoji: 🤖
   items: []
 
 - slug: advanced-computer-architecture
   name: Advanced Computer Architecture
-  emoji: 🖥️
   items:
     - title: Midterm Definition Flashcards
       summary: >-

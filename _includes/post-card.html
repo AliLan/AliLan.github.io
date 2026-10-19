@@ -1,0 +1,15 @@
+{%- assign post = include.post -%}
+{%- assign words = post.content | strip_html | number_of_words -%}
+{%- assign mins = words | divided_by: 200 | plus: 1 -%}
+<a class="card post-card" href="{{ post.url | relative_url }}">
+  <ul class="chips">
+    {%- for t in post.categories limit: 1 %}<li class="chip">{{ t }}</li>{% endfor %}
+    {%- for t in post.tags limit: 2 %}<li class="chip">{{ t }}</li>{% endfor %}
+  </ul>
+  <h3 class="card-title">{{ post.title }}</h3>
+  <p class="card-desc">{{ post.excerpt | strip_html | strip | truncate: 140 }}</p>
+  <div class="meta">
+    <span>{% include icon.html name="calendar" %}{{ post.date | date: "%b %-d, %Y" }}</span>
+    <span>{% include icon.html name="clock" %}{{ mins }} min read</span>
+  </div>
+</a>
