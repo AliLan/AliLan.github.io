@@ -12,22 +12,22 @@ permalink: /
 <div class="nature-bg">
   <div class="main-columns">
     <div class="main-left">
-      <h1>👋 Hi, I'm Lihua</h1>
+      <h1>Hi, I'm Lihua</h1>
       <p class="lead">Welcome to my personal blog! Here I record my learning, tech explorations, and inspirations.</p>
       <div class="colorful-section gradient-pinkblue">
-        <h2>🚀 Featured Topics</h2>
+        <h2>Featured Topics</h2>
         <ul class="post-highlights">
-          <li>🤖 <b>AI/Machine Learning</b>: Latest technology and hands-on experience</li>
-          <li>💻 <b>Web Development</b>: Frontend, backend, and full-stack growth</li>
-          <li>🧠 <b>Algorithms</b>: Coding practice and competition insights</li>
-          <li>🌈 <b>Life</b>: Inspiration, essays, and growth stories</li>
+          <li><b>AI/Machine Learning</b>: Latest technology and hands-on experience</li>
+          <li><b>Web Development</b>: Frontend, backend, and full-stack growth</li>
+          <li><b>Algorithms</b>: Coding practice and competition insights</li>
+          <li><b>Life</b>: Inspiration, essays, and growth stories</li>
         </ul>
-        <p><a href="{{ '/projects/' | relative_url }}" class="social-link">🛠️ See my projects →</a></p>
+        <p><a href="{{ '/projects/' | relative_url }}" class="social-link">See my projects →</a></p>
       </div>
     </div>
     <div class="main-right">
       <div class="colorful-section gradient-bluegreen posts-list-section">
-        <h2>📝 Latest Posts</h2>
+        <h2>Latest Posts</h2>
         <ul class="posts-list">
           {% for post in site.posts limit:8 %}
           <li class="post-card">
@@ -43,17 +43,11 @@ permalink: /
 
   <div class="bottom-sections">
     <div class="colorful-section gradient-bluegreen about-section">
-      <h2>🌟 About Me</h2>
+      <h2>About Me</h2>
       <p>Graduate student in Computer Science, passionate about technology, design, and sharing. My goal is to make the world better with code and creativity.</p>
-      <div class="about-icons">
-        <span title="AI Enthusiast">🤖</span>
-        <span title="Web Developer">💻</span>
-        <span title="Designer">🎨</span>
-        <span title="Lifelong Learner">📚</span>
-      </div>
     </div>
     <div class="colorful-section gradient-yellowpink contact-section">
-      <h2>📬 Contact Me</h2>
+      <h2>Contact Me</h2>
       <div class="social-links">
         <a href="https://github.com/AliLan" class="social-link">GitHub</a>
         <a href="mailto:your-email@example.com" class="social-link">Email</a>

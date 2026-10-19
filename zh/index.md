@@ -13,21 +13,21 @@ lang: zh-CN
 <div class="nature-bg">
   <div class="main-columns">
     <div class="main-left">
-      <h1>👋 Hi, 我是丽华</h1>
+      <h1>Hi, 我是丽华</h1>
       <p class="lead">欢迎来到我的个人博客！这里记录了我的学习成长、技术探索与生活灵感。</p>
       <div class="colorful-section gradient-pinkblue">
-        <h2>🚀 精选主题</h2>
+        <h2>精选主题</h2>
         <ul class="post-highlights">
-          <li>🤖 <b>AI/机器学习</b>：最新技术与实战经验</li>
-          <li>💻 <b>Web开发</b>：前端、后端与全栈成长</li>
-          <li>🧠 <b>算法</b>：刷题与竞赛心得</li>
-          <li>🌈 <b>生活</b>：灵感、随笔与成长故事</li>
+          <li><b>AI/机器学习</b>：最新技术与实战经验</li>
+          <li><b>Web开发</b>：前端、后端与全栈成长</li>
+          <li><b>算法</b>：刷题与竞赛心得</li>
+          <li><b>生活</b>：灵感、随笔与成长故事</li>
         </ul>
       </div>
     </div>
     <div class="main-right">
       <div class="colorful-section gradient-bluegreen posts-list-section">
-        <h2>📝 最新文章</h2>
+        <h2>最新文章</h2>
         <ul class="posts-list">
           {% for post in site.posts limit:8 %}
           <li class="post-card">
@@ -43,17 +43,11 @@ lang: zh-CN
 
   <div class="bottom-sections">
     <div class="colorful-section gradient-bluegreen about-section">
-      <h2>🌟 关于我</h2>
+      <h2>关于我</h2>
       <p>计算机专业研究生，热爱技术、设计与分享。目标是用代码和创意让世界更美好。</p>
-      <div class="about-icons">
-        <span title="AI Enthusiast">🤖</span>
-        <span title="Web Developer">💻</span>
-        <span title="Designer">🎨</span>
-        <span title="Lifelong Learner">📚</span>
-      </div>
     </div>
     <div class="colorful-section gradient-yellowpink contact-section">
-      <h2>📬 联系我</h2>
+      <h2>联系我</h2>
       <div class="social-links">
         <a href="https://github.com/AliLan" class="social-link">GitHub</a>
         <a href="mailto:your-email@example.com" class="social-link">Email</a>
