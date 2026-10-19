@@ -1,0 +1,65 @@
+# UI strings. Keys are page languages: "en" (default) and "zh-CN".
+en:
+  home: Home
+  projects: Projects
+  courses: Courses
+  blog: Blog
+  about: About
+  contact: Contact
+  portfolio: Portfolio
+  live_demo: Live Demo
+  source_code: Source Code
+  video_soon: Video coming soon
+  open: Open
+  read_pdf: Read PDF
+  item: item
+  items: items
+  coming_soon: Coming soon
+  nothing_posted: Nothing posted yet.
+  view_course: View course
+  min_read: min read
+  date_format: "%b %-d, %Y"
+  all_courses: ← All courses
+  all_posts: ← All posts
+  course_sub: Master course projects · CSULB
+  empty_course: Nothing here yet. Check back soon.
+  projects_sub: A collection of things I've built, from VR experiences at the CSULB XR Lab to AI and data projects.
+  search_projects: Search projects...
+  projects_unit: projects
+  no_match: No projects match your filters.
+  courses_title: Master Course Projects
+  courses_sub: Projects, papers, and study tools from my M.S. in Computer Science at California State University, Long Beach.
+  blog_sub: Notes on software engineering, AI, VR, and grad school.
+  posts_unit: posts
+zh-CN:
+  home: 首页
+  projects: 项目
+  courses: 课程
+  blog: 博客
+  about: 关于
+  contact: 联系
+  portfolio: 作品集
+  live_demo: 在线体验
+  source_code: 源代码
+  video_soon: 视频即将上线
+  open: 打开
+  read_pdf: 阅读 PDF
+  item: 项内容
+  items: 项内容
+  coming_soon: 敬请期待
+  nothing_posted: 暂无内容。
+  view_course: 查看课程
+  min_read: 分钟阅读
+  date_format: "%Y年%-m月%-d日"
+  all_courses: ← 全部课程
+  all_posts: ← 全部文章
+  course_sub: 硕士课程项目 · CSULB
+  empty_course: 暂时还没有内容，敬请期待。
+  projects_sub: 我做过的项目合集，包括 CSULB XR Lab 的 VR 体验，以及 AI 与数据方向的项目。
+  search_projects: 搜索项目...
+  projects_unit: 个项目
+  no_match: 没有符合条件的项目。
+  courses_title: 硕士课程项目
+  courses_sub: 我在加州州立大学长滩分校（CSULB）攻读计算机科学硕士期间的课程项目、论文和学习工具。
+  blog_sub: 关于软件工程、AI、VR 和研究生生活的笔记。
+  posts_unit: 篇文章

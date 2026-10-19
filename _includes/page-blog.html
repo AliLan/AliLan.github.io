@@ -1,0 +1,13 @@
+{%- include lang.html -%}
+<div class="container">
+  <header class="page-head">
+    <h1 class="page-title">{{ t.blog }}</h1>
+    <p class="page-sub">{{ t.blog_sub }}</p>
+  </header>
+  <p class="count">{{ site.posts.size }} {{ t.posts_unit }}</p>
+  <div class="grid-3">
+    {%- for post in site.posts %}
+    {% include post-card.html post=post %}
+    {%- endfor %}
+  </div>
+</div>

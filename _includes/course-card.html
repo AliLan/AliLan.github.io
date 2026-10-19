@@ -1,7 +1,9 @@
+{%- include lang.html -%}
 {%- assign c = include.c -%}
-<a class="card post-card" href="{{ '/courses/' | append: c.slug | append: '/' | relative_url }}">
-  <ul class="chips"><li class="chip">{% if c.items.size > 0 %}{{ c.items.size }} item{% if c.items.size > 1 %}s{% endif %}{% else %}Coming soon{% endif %}</li></ul>
-  <h3 class="card-title">{{ c.name }}</h3>
-  <p class="card-desc">{% if c.items.size > 0 %}{{ c.items | map: "title" | join: " · " }}{% else %}Nothing posted yet.{% endif %}</p>
-  <div class="meta"><span>View course {% include icon.html name="arrow" %}</span></div>
+{%- if zh and c.name_zh %}{% assign cname = c.name_zh %}{% else %}{% assign cname = c.name %}{% endif -%}
+<a class="card post-card" href="{{ base | append: '/courses/' | append: c.slug | append: '/' | relative_url }}">
+  <ul class="chips"><li class="chip">{% if c.items.size > 0 %}{{ c.items.size }} {% if c.items.size > 1 %}{{ t.items }}{% else %}{{ t.item }}{% endif %}{% else %}{{ t.coming_soon }}{% endif %}</li></ul>
+  <h3 class="card-title">{{ cname }}</h3>
+  <p class="card-desc">{% if c.items.size > 0 %}{% for it in c.items %}{% if zh and it.title_zh %}{{ it.title_zh }}{% else %}{{ it.title }}{% endif %}{% unless forloop.last %} · {% endunless %}{% endfor %}{% else %}{{ t.nothing_posted }}{% endif %}</p>
+  <div class="meta"><span>{{ t.view_course }} {% include icon.html name="arrow" %}</span></div>
 </a>

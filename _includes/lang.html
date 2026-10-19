@@ -1,0 +1,3 @@
+{%- assign L = page.lang | default: "en" -%}
+{%- assign t = site.data.i18n[L] | default: site.data.i18n.en -%}
+{%- if L == "zh-CN" -%}{%- assign zh = true -%}{%- assign base = "/zh" -%}{%- else -%}{%- assign zh = false -%}{%- assign base = "" -%}{%- endif -%}

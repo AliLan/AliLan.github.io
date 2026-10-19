@@ -1,0 +1,37 @@
+{%- include lang.html -%}
+<div class="container">
+  <header class="page-head">
+    <h1 class="page-title">{% if zh %}联系我{% else %}Get in Touch{% endif %}</h1>
+    <p class="page-sub">{% if zh %}有问题、工作机会，或者只是想打个招呼？填写下面的表单，会自动在你的邮件应用里生成邮件，确认后发送即可。{% else %}Have a question, an opportunity, or just want to say hello? Fill out the form below and it will open in your email app, ready to send.{% endif %}</p>
+  </header>
+  <div class="contact-grid">
+    <form class="form" id="contact-form">
+      <div><label for="cf-name">{% if zh %}姓名{% else %}Name{% endif %} *</label><input class="field" id="cf-name" name="name" placeholder="{% if zh %}你的名字{% else %}Your name{% endif %}" required></div>
+      <div><label for="cf-email">{% if zh %}邮箱{% else %}Email{% endif %} *</label><input class="field" id="cf-email" name="email" type="email" placeholder="your@email.com" required></div>
+      <div class="full"><label for="cf-subject">{% if zh %}主题{% else %}Subject{% endif %}</label><input class="field" id="cf-subject" name="subject" placeholder="{% if zh %}关于什么事？{% else %}What is this about?{% endif %}"></div>
+      <div class="full"><label for="cf-message">{% if zh %}留言{% else %}Message{% endif %} *</label><textarea class="field" id="cf-message" name="message" placeholder="{% if zh %}写下你想说的话...{% else %}Your message...{% endif %}" required></textarea></div>
+      <div class="full"><button class="btn btn-dark" type="submit">{% include icon.html name="send" %}{% if zh %}发送消息{% else %}Send Message{% endif %}</button></div>
+    </form>
+    <aside>
+      <div class="card side-note">
+        <h3>{% include icon.html name="chat" %}{% if zh %}直接联系{% else %}Reach me directly{% endif %}</h3>
+        <p><a href="mailto:lihualan2025@gmail.com">lihualan2025@gmail.com</a></p>
+        <p><a href="https://www.linkedin.com/in/lihualan">linkedin.com/in/lihualan</a></p>
+        <p><a href="https://github.com/AliLan">github.com/AliLan</a></p>
+      </div>
+      <div class="card side-note">
+        <h3>{% include icon.html name="pin" %}{% if zh %}所在地{% else %}Location{% endif %}</h3>
+        <p>{% if zh %}美国加州洛杉矶。正在寻找 AI、搜索和后端系统方向的软件工程师职位。{% else %}Los Angeles, CA. Open to software engineering roles in AI, search, and backend systems.{% endif %}</p>
+      </div>
+    </aside>
+  </div>
+</div>
+<script>
+document.getElementById('contact-form').addEventListener('submit', function (e) {
+  e.preventDefault();
+  var f = e.target;
+  var subject = f.subject.value || '{% if zh %}来自你网站的消息{% else %}Hello from your website{% endif %}';
+  var body = f.message.value + '\n\n' + f.name.value + ' <' + f.email.value + '>';
+  window.location.href = 'mailto:lihualan2025@gmail.com?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(body);
+});
+</script>

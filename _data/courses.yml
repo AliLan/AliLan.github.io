@@ -9,38 +9,50 @@
 
 - slug: advanced-algorithms
   name: Advanced Algorithms
+  name_zh: 高级算法
   items: []
 
 - slug: semantic-web
   name: Semantic Web
+  name_zh: 语义网
   items:
     - title: cornercase
       summary: Semantic Web course project.
+      summary_zh: 语义网课程项目。
       repo: https://github.com/AliLan/cornercase
 
 - slug: advanced-software-technology
   name: Advanced Software Technology
+  name_zh: 高级软件技术
   items:
     - title: Enhancing Requirement Analysis with Hybrid AI-Based Question Answering Systems
+      title_zh: 基于混合 AI 问答系统的需求分析增强
       summary: >-
         Co-authored and presented at SEET 2026. Combines BM25, BGE embeddings,
         Reciprocal Rank Fusion (RRF), and cross-encoder re-ranking for
         requirement analysis. Evaluated on 387 requirement QA pairs, it improved
         retrieval recall by up to 13.3% with higher nDCG ranking quality.
+      summary_zh: >-
+        SEET 2026 论文（合著并现场汇报）。结合 BM25、BGE 向量嵌入、倒数排名融合（RRF）和交叉编码器重排序做需求分析，在 387 组需求问答对上评测，检索召回率最高提升 13.3%，nDCG 排序质量也更高。
 
 - slug: advanced-programming-languages
   name: Advanced Programming Languages
+  name_zh: 高级程序设计语言
   items: []
 
 - slug: advanced-artificial-intelligence
   name: Advanced Artificial Intelligence
+  name_zh: 高级人工智能
   items: []
 
 - slug: advanced-computer-architecture
   name: Advanced Computer Architecture
+  name_zh: 高级计算机体系结构
   items:
     - title: Midterm Definition Flashcards
+      title_zh: 期中概念知识卡片
       summary: >-
         Interactive flip cards for computer architecture definitions, with
         Chinese hints for tricky terms.
+      summary_zh: 计算机体系结构概念的交互式翻转卡片，难懂的术语附中文提示。
       link: /cecs530-flashcards/

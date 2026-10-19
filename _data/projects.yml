@@ -3,8 +3,10 @@
 #   - a YouTube/Vimeo embed URL, e.g. https://www.youtube.com/embed/VIDEO_ID
 #   - a file in this repo, e.g. /assets/videos/mosque-vr.mp4
 # `repo` is only shown for public repositories.
+# `title_zh` / `summary_zh` are shown on the Chinese pages.
 
 - title: Virtual Mosque
+  title_zh: 虚拟清真寺
   category: VR
   year: 2026
   tags: [VR, Unity3D, C#, Blender, CSULB XR Lab]
@@ -12,43 +14,57 @@
     An immersive VR walkthrough of a mosque interior, built at the CSULB XR Lab
     with Blender, Unity3D, and C#, using AI-assisted (MCP) workflows for rapid
     prototyping.
+  summary_zh: >-
+    在 CSULB XR Lab 用 Blender、Unity3D 和 C# 制作的沉浸式清真寺室内 VR 漫游体验，借助 AI 辅助（MCP）工作流快速完成原型。
   video: ""
   repo: ""
 
 - title: Food Label Guide
+  title_zh: 食品标签指南
   category: VR
   year: 2026
   tags: [VR, Unity3D, C#, CSULB XR Lab]
   summary: >-
     An interactive VR food label guide, prototyped at the CSULB XR Lab with
     Blender, Unity3D, and C#.
+  summary_zh: >-
+    在 CSULB XR Lab 用 Blender、Unity3D 和 C# 制作原型的交互式 VR 食品标签指南。
   video: ""
   repo: ""
 
 - title: Imperial China
+  title_zh: 古代中国宫廷
   category: VR
   year: 2026
   tags: [VR, Unity3D, 3D Environments]
   summary: >-
     An interactive recreation of imperial China, with explorable scenes such
     as the emperor's office and a merchant hall.
+  summary_zh: >-
+    交互式重现古代中国宫廷，可以探索皇帝书房、商人会馆等场景。
   video: ""
   repo: ""
 
 - title: Intelligent Recommendation System
+  title_zh: 智能推荐系统
   category: AI
   tags: [Python, KNN, Collaborative Filtering, React]
   summary: >-
     A personalized recommendation system that uses KNN and collaborative
     filtering on user interaction data, with a React-based interface.
+  summary_zh: >-
+    基于用户交互数据，使用 KNN 和协同过滤生成个性化推荐，前端界面采用 React。
   video: ""
   repo: ""
 
 - title: CS Learning Platform with Knowledge Graphs
+  title_zh: 基于知识图谱的计算机学习平台
   category: AI
   tags: [Java, React, Neo4j]
   summary: >-
     A Neo4j knowledge graph of 500+ interconnected computer science concepts,
     with Java services and an interactive React graph visualization.
+  summary_zh: >-
+    用 Neo4j 构建包含 500 多个相互关联的计算机科学概念的知识图谱，后端为 Java 服务，前端用 React 做交互式图谱可视化。
   video: ""
   repo: ""

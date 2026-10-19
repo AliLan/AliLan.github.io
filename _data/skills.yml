@@ -1,8 +1,12 @@
 - group: AI & Machine Learning
+  group_zh: AI 与机器学习
   items: [BM25, BGE Embeddings, Reciprocal Rank Fusion, Cross-encoder Re-ranking, KNN, Collaborative Filtering]
 - group: Languages
+  group_zh: 编程语言
   items: [Java, Python, SQL, JavaScript, C++, C#]
 - group: Frameworks & Data
+  group_zh: 框架与数据
   items: [Spring Cloud, Kafka, React, REST APIs, MySQL, Oracle, Neo4j, MongoDB]
 - group: Tools
+  group_zh: 工具
   items: [Docker, Git, Unity3D, Blender]

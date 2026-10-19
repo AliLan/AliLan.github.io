@@ -1,0 +1,129 @@
+{%- include lang.html -%}
+<div class="container">
+  <header class="page-head">
+    <h1 class="page-title">{% if zh %}关于我{% else %}About Me{% endif %}</h1>
+    <p class="page-sub">{% if zh %}我的技能、工作经历、研究和教育背景。完整信息见我的<a href="{{ base | append: '/cv/' | relative_url }}" style="text-decoration:underline">简历</a>。{% else %}My skills, professional experience, research, and education. Full details are in my <a href="{{ '/cv/' | relative_url }}" style="text-decoration:underline">CV</a>.{% endif %}</p>
+  </header>
+
+  <div class="about-grid">
+    <div class="profile">
+      <div class="avatar">{% if site.data.profile.photo %}<img src="{{ site.data.profile.photo | relative_url }}" alt="Lihua Lan">{% else %}LL{% endif %}</div>
+      <p>{% if zh %}计算机科学硕士{% else %}M.S. Computer Science{% endif %}</p>
+      <p>CSULB · XR Lab</p>
+      <div class="icons">
+        <a href="mailto:lihualan2025@gmail.com" aria-label="Email">{% include icon.html name="mail" %}</a>
+        <a href="https://github.com/AliLan" aria-label="GitHub">{% include icon.html name="github" %}</a>
+        <a href="https://www.linkedin.com/in/lihualan" aria-label="LinkedIn">{% include icon.html name="linkedin" %}</a>
+      </div>
+    </div>
+    <div class="bio">
+      {%- if zh %}
+      <h2>你好，我是 Lihua Lan</h2>
+      <p>我是一名常驻洛杉矶的软件工程师，有 4 年以上金融科技行业经验。在福州农村商业银行工作期间，我主导开发了基于 Java、Spring Cloud 和 Kafka 的对公贷款平台，服务 11 万多家客户；还搭建了智能记账平台，服务 2,500 多家零售商户。</p>
+      <p>目前我在加州州立大学长滩分校（CSULB）攻读计算机科学硕士，方向是 AI 与信息检索。我关于混合 AI 问答系统辅助需求分析的研究（结合 BM25、BGE 向量嵌入、倒数排名融合和交叉编码器重排序）已在 SEET 2026 发表并汇报。</p>
+      <p>在 CSULB XR Lab，我借助 AI 辅助工作流，用 Blender、Unity3D 和 C# 快速制作交互式 VR 应用原型，包括食品标签指南和虚拟清真寺体验。</p>
+      {%- else %}
+      <h2>Hi, I'm Lihua Lan</h2>
+      <p>I'm a software engineer based in Los Angeles with 4+ years of experience in FinTech. At Rural Commercial Bank of Fuzhou, I led development of a corporate lending platform on Java, Spring Cloud, and Kafka that supports 110,000+ customers, and built an intelligent accounting platform used by 2,500+ retail merchants.</p>
+      <p>I'm now pursuing an M.S. in Computer Science at California State University, Long Beach, focusing on AI and information retrieval. My research on hybrid AI-based question answering for requirement analysis, combining BM25, BGE embeddings, Reciprocal Rank Fusion, and cross-encoder re-ranking, was presented at SEET 2026.</p>
+      <p>At the CSULB XR Lab, I use AI-assisted workflows in Blender, Unity3D, and C# to prototype interactive VR applications, including a Food Label guide and a Virtual Mosque experience.</p>
+      {%- endif %}
+    </div>
+  </div>
+
+  <h2 class="block-title">{% if zh %}技能{% else %}Skills{% endif %}</h2>
+  <div class="tabs" role="tablist">
+    {%- for g in site.data.skills %}<button class="tab{% if forloop.first %} active{% endif %}" type="button" data-group="{{ forloop.index }}">{% if zh and g.group_zh %}{{ g.group_zh }}{% else %}{{ g.group }}{% endif %}</button>{% endfor %}
+  </div>
+  {%- for g in site.data.skills %}
+  <div class="skill-grid" data-group="{{ forloop.index }}"{% unless forloop.first %} hidden{% endunless %}>{% for s in g.items %}<div class="skill">{{ s }}</div>{% endfor %}</div>
+  {%- endfor %}
+
+  <h2 class="block-title">{% if zh %}工作经历{% else %}Experience{% endif %}</h2>
+  <div class="timeline">
+    <article class="card entry">
+      <div class="entry-head">
+        <div><h3>{% if zh %}CSULB XR Lab（学术技术服务部）{% else %}CSULB XR Lab – Academic Technology Services{% endif %}</h3><p class="role">{% if zh %}XR 学生助理{% else %}XR Student Assistant{% endif %}</p></div>
+        <div class="when">{% if zh %}2026年1月 – 2027年5月<br>加州长滩{% else %}Jan 2026 – May 2027<br>Long Beach, CA{% endif %}</div>
+      </div>
+      <ul>
+        {%- if zh %}
+        <li>借助 AI 辅助工作流（MCP），在 Blender、Unity3D 和 C# 中快速制作交互式 VR 应用原型，包括食品标签指南和虚拟清真寺体验。</li>
+        {%- else %}
+        <li>Leveraged AI-assisted workflows (MCP) in Blender, Unity3D, and C# to rapidly prototype interactive VR applications, including a Food Label guide and a Virtual Mosque experience.</li>
+        {%- endif %}
+      </ul>
+    </article>
+    <article class="card entry">
+      <div class="entry-head">
+        <div><h3>{% if zh %}福州农村商业银行{% else %}Rural Commercial Bank of Fuzhou{% endif %}</h3><p class="role">{% if zh %}软件工程师{% else %}Software Engineer{% endif %}</p></div>
+        <div class="when">{% if zh %}2020年4月 – 2024年8月<br>中国福州{% else %}Apr 2020 – Aug 2024<br>Fuzhou, China{% endif %}</div>
+      </div>
+      <ul>
+        {%- if zh %}
+        <li>主导开发基于 Java、Spring Cloud 和 Kafka 的对公贷款平台，服务 11 万多家客户，助力贷款规模超过 3.4 亿元人民币。</li>
+        <li>设计并交付基于 React 和 Java 的信贷产品申请系统，简化贷款流程，带来超过 1,000 万元人民币的新增利润。</li>
+        <li>搭建服务 2,500 多家零售商户的智能记账平台，实现财务流程自动化，支撑约 1.76 亿元人民币存款。</li>
+        <li>在 Oracle 和 MySQL 之间构建数据集成与报表流程，支持财务分析和运营报表。</li>
+        {%- else %}
+        <li>Led development of a corporate lending platform using Java, Spring Cloud, and Kafka, supporting 110,000+ customers and contributing to RMB 340M+ in loan volume.</li>
+        <li>Designed and delivered a credit product application system using React and Java, streamlining lending workflows and contributing to more than RMB 10M in additional profit.</li>
+        <li>Built an intelligent accounting platform serving 2,500+ retail merchants, automating financial workflows and supporting approximately RMB 176M in deposits.</li>
+        <li>Built data integration and reporting workflows across Oracle and MySQL for financial analytics and operational reporting.</li>
+        {%- endif %}
+      </ul>
+    </article>
+  </div>
+
+  <h2 class="block-title">{% if zh %}研究{% else %}Research{% endif %}</h2>
+  <article class="card entry">
+    <div class="entry-head">
+      <div><h3>Enhancing Requirement Analysis with Hybrid AI-Based Question Answering Systems</h3><p class="role">{% if zh %}合著者、汇报人{% else %}Co-author and presenter{% endif %}</p></div>
+      <div class="when">SEET 2026</div>
+    </div>
+    <ul>
+      {%- if zh %}
+      <li>结合 BM25、BGE 向量嵌入、倒数排名融合（RRF）和交叉编码器重排序的混合词法与语义检索。</li>
+      <li>在 387 组需求问答对上评测：检索召回率最高提升 13.3%，nDCG 排序质量更高。</li>
+      {%- else %}
+      <li>Hybrid lexical and semantic retrieval with BM25, BGE embeddings, Reciprocal Rank Fusion (RRF), and cross-encoder re-ranking.</li>
+      <li>Evaluated on 387 requirement QA pairs: up to 13.3% higher retrieval recall and better nDCG ranking quality.</li>
+      {%- endif %}
+    </ul>
+  </article>
+
+  <h2 class="block-title">{% if zh %}教育背景{% else %}Education{% endif %}</h2>
+  <div class="timeline">
+    <article class="card entry">
+      <div class="entry-head">
+        <div><h3>{% if zh %}加州州立大学长滩分校（CSULB）{% else %}California State University, Long Beach{% endif %}</h3><p class="role">{% if zh %}计算机科学硕士{% else %}Master of Science in Computer Science{% endif %}</p></div>
+        <div class="when">{% if zh %}2026年1月 – 2027年12月<br>加州长滩{% else %}Jan 2026 – Dec 2027<br>Long Beach, CA{% endif %}</div>
+      </div>
+    </article>
+    <article class="card entry">
+      <div class="entry-head">
+        <div><h3>{% if zh %}华中师范大学{% else %}Central China Normal University{% endif %}</h3><p class="role">{% if zh %}计算机科学与技术 学士{% else %}Bachelor of Computer Science and Technology{% endif %}</p></div>
+        <div class="when">{% if zh %}2016年9月 – 2020年6月<br>中国武汉{% else %}Sep 2016 – Jun 2020<br>Wuhan, China{% endif %}</div>
+      </div>
+    </article>
+  </div>
+
+  <h2 class="block-title">{% if zh %}荣誉奖项{% else %}Honors &amp; Awards{% endif %}</h2>
+  <div class="timeline">
+    <article class="card entry"><div class="entry-head"><div><h3>{% if zh %}中国大学生计算机设计大赛 全国一等奖{% else %}National First Prize, Chinese Collegiate Computing Competition{% endif %}</h3><p class="role">{% if zh %}软件设计{% else %}Software Design{% endif %}</p></div><div class="when">2019</div></div></article>
+    <article class="card entry"><div class="entry-head"><div><h3>{% if zh %}中国机器人大赛 全国一等奖{% else %}National First Prize, China Robot Competition{% endif %}</h3><p class="role">{% if zh %}仿人机器人{% else %}Humanoid Robotics{% endif %}</p></div><div class="when">2017</div></div></article>
+  </div>
+</div>
+
+<script>
+(function () {
+  var tabs = document.querySelectorAll('.tab');
+  var grids = document.querySelectorAll('.skill-grid');
+  tabs.forEach(function (t) {
+    t.addEventListener('click', function () {
+      tabs.forEach(function (x) { x.classList.toggle('active', x === t); });
+      grids.forEach(function (g) { g.hidden = g.dataset.group !== t.dataset.group; });
+    });
+  });
+})();
+</script>

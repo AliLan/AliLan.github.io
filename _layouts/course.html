@@ -1,29 +1,30 @@
 ---
 layout: default
 ---
+{%- include lang.html -%}
 {%- assign c = site.data.courses | where: "slug", page.course | first -%}
 <div class="container">
   <header class="page-head">
-    <a class="back" href="{{ '/courses/' | relative_url }}">← All courses</a>
-    <h1 class="page-title">{{ c.name }}</h1>
-    <p class="page-sub">Master course projects · CSULB</p>
+    <a class="back" href="{{ base | append: '/courses/' | relative_url }}">{{ t.all_courses }}</a>
+    <h1 class="page-title">{% if zh and c.name_zh %}{{ c.name_zh }}{% else %}{{ c.name }}{% endif %}</h1>
+    <p class="page-sub">{{ t.course_sub }}</p>
   </header>
   {%- if c.items.size > 0 %}
   <div class="stack">
     {%- for it in c.items %}
     <article class="card">
-      <h3 class="card-title">{{ it.title }}</h3>
-      {%- if it.summary %}<p class="card-desc">{{ it.summary }}</p>{% endif %}
+      <h3 class="card-title">{% if zh and it.title_zh %}{{ it.title_zh }}{% else %}{{ it.title }}{% endif %}</h3>
+      {%- if it.summary %}<p class="card-desc">{% if zh and it.summary_zh %}{{ it.summary_zh }}{% else %}{{ it.summary }}{% endif %}</p>{% endif %}
       <div class="links">
-        {%- if it.link %}<a href="{{ it.link | relative_url }}">{% include icon.html name="external" %}Open</a>{% endif %}
-        {%- if it.pdf %}<a href="{{ it.pdf | relative_url }}">{% include icon.html name="file" %}Read PDF</a>{% endif %}
-        {%- if it.repo %}<a href="{{ it.repo }}">{% include icon.html name="code" %}Source Code</a>{% endif %}
+        {%- if it.link %}<a href="{{ it.link | relative_url }}">{% include icon.html name="external" %}{{ t.open }}</a>{% endif %}
+        {%- if it.pdf %}<a href="{{ it.pdf | relative_url }}">{% include icon.html name="file" %}{{ t.read_pdf }}</a>{% endif %}
+        {%- if it.repo %}<a href="{{ it.repo }}">{% include icon.html name="code" %}{{ t.source_code }}</a>{% endif %}
       </div>
     </article>
     {%- endfor %}
   </div>
   {%- else %}
-  <div class="empty">Nothing here yet. Check back soon.</div>
+  <div class="empty">{{ t.empty_course }}</div>
   {%- endif %}
   {{ content }}
 </div>

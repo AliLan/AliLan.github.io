@@ -1,15 +1,18 @@
+{%- include lang.html -%}
 {%- assign post = include.post -%}
 {%- assign words = post.content | strip_html | number_of_words -%}
-{%- assign mins = words | divided_by: 200 | plus: 1 -%}
+{%- if post.lang == "zh-CN" %}{% assign mins = post.content | strip_html | size | divided_by: 500 | plus: 1 %}{% else %}{% assign mins = words | divided_by: 200 | plus: 1 %}{% endif -%}
+{%- if zh and post.title_zh %}{% assign ptitle = post.title_zh %}{% else %}{% assign ptitle = post.title %}{% endif -%}
+{%- if zh and post.excerpt_zh %}{% assign pex = post.excerpt_zh %}{% else %}{% assign pex = post.excerpt | strip_html | strip %}{% endif -%}
 <a class="card post-card" href="{{ post.url | relative_url }}">
   <ul class="chips">
-    {%- for t in post.categories limit: 1 %}<li class="chip">{{ t }}</li>{% endfor %}
-    {%- for t in post.tags limit: 2 %}<li class="chip">{{ t }}</li>{% endfor %}
+    {%- for tg in post.categories limit: 1 %}<li class="chip">{{ tg }}</li>{% endfor %}
+    {%- for tg in post.tags limit: 2 %}<li class="chip">{{ tg }}</li>{% endfor %}
   </ul>
-  <h3 class="card-title">{{ post.title }}</h3>
-  <p class="card-desc">{{ post.excerpt | strip_html | strip | truncate: 140 }}</p>
+  <h3 class="card-title">{{ ptitle }}</h3>
+  <p class="card-desc">{{ pex | truncate: 140 }}</p>
   <div class="meta">
-    <span>{% include icon.html name="calendar" %}{{ post.date | date: "%b %-d, %Y" }}</span>
-    <span>{% include icon.html name="clock" %}{{ mins }} min read</span>
+    <span>{% include icon.html name="calendar" %}{{ post.date | date: t.date_format }}</span>
+    <span>{% include icon.html name="clock" %}{{ mins }} {{ t.min_read }}</span>
   </div>
 </a>

@@ -1,4 +1,11 @@
-# Python爬虫完整学习指南
+---
+title: "Python Web Scraping Guide"
+title_zh: "Python 爬虫完整学习指南"
+date: 2025-06-05
+categories: [Notes]
+tags: [Python, Web Scraping]
+lang: zh-CN
+---
 
 ## 1. 网络基础知识
 
