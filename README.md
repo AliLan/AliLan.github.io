@@ -17,7 +17,7 @@
    ```
 
 3. **访问博客**
-   打开浏览器访问: http://localhost:4000/lihualan.github.io/
+   打开浏览器访问: http://localhost:4000/
 
 ### 构建生产版本
 
@@ -30,7 +30,7 @@ bundle exec jekyll build
 ## 📁 项目结构
 
 ```
-lihualan.github.io/
+AliLan.github.io/
 ├── _config.yml          # Jekyll 配置文件
 ├── _posts/              # 博客文章目录
 ├── _pages/              # 静态页面目录
@@ -138,7 +138,7 @@ permalink: /page-url/
    GitHub Pages 会自动构建和部署你的博客
 
 3. **访问博客**
-   访问: https://alilan.github.io/lihualan.github.io/
+   访问: https://alilan.github.io/
 
 ## 📚 常用命令
 

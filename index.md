@@ -29,7 +29,7 @@ subtitle: 记录我的学习与成长
 </div>
 
 <div style="text-align:right; margin-top:1rem;">
-  <b>中文</b> | <a href="/en/">English</a>
+  <b>中文</b> | <a href="{{ '/en/' | relative_url }}">English</a>
 </div>
 
 <div class="nature-bg">
@@ -399,7 +399,7 @@ function selectLanguage(language) {
   
   // 根据选择跳转到相应页面
   if (language === 'english') {
-    window.location.href = '/en/';
+    window.location.href = '{{ "/en/" | relative_url }}';
   }
   // 如果选择中文，保持在当前页面
 }
@@ -414,7 +414,7 @@ document.addEventListener('DOMContentLoaded', function() {
   }
   
   // 如果用户直接访问英文页面，也隐藏弹窗
-  if (window.location.pathname === '/en/') {
+  if (window.location.pathname === '{{ "/en/" | relative_url }}') {
     document.getElementById('languageModal').style.display = 'none';
   }
 });

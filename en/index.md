@@ -30,7 +30,7 @@ permalink: /en/
 </div>
 
 <div style="text-align:right; margin-top:1rem;">
-  <a href="/">中文</a> | <b>English</b>
+  <a href="{{ '/' | relative_url }}">中文</a> | <b>English</b>
 </div>
 
 <div class="nature-bg">
@@ -395,7 +395,7 @@ function selectLanguage(language) {
   localStorage.setItem('preferredLanguage', language);
   document.getElementById('languageModal').style.display = 'none';
   if (language === 'chinese') {
-    window.location.href = '/';
+    window.location.href = '{{ "/" | relative_url }}';
   }
 }
 document.addEventListener('DOMContentLoaded', function() {

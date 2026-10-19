@@ -1,8 +1,8 @@
 title: 丽华的博客
 author: 丽华 Lan
 description: 记录我的研究生学习旅程 - 技术分享、学习笔记、项目经验
-baseurl: "/lihualan.github.io"
-url: "https://AliLan.github.io"
+baseurl: ""
+url: "https://alilan.github.io"
 theme: minima
 plugins:
   - jekyll-feed
