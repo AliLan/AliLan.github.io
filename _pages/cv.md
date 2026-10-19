@@ -4,4 +4,4 @@ title: CV
 permalink: /cv/
 ---
 
-这是我的简历页面，未来我会在这里展示我的项目、技能和经历。
+This is my CV page. I'll add my projects, skills, and experience here soon.

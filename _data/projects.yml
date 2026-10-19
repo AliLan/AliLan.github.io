@@ -1,0 +1,54 @@
+# Project list for /projects/.
+# To add a video later, set `video` to either:
+#   - a YouTube/Vimeo embed URL, e.g. https://www.youtube.com/embed/VIDEO_ID
+#   - a file in this repo, e.g. /assets/videos/mosque-vr.mp4
+# `repo` is only shown for public repositories.
+
+- title: Mosque VR
+  emoji: 🕌
+  year: 2026
+  tags: [VR, Unity, C#, XR Interaction Toolkit]
+  summary: >-
+    An immersive VR walkthrough of a mosque interior, built in Unity with
+    hand-controller interaction, stained-glass windows, and custom lighting.
+  video: ""
+  repo: ""
+
+- title: Imperial China
+  emoji: 🏯
+  year: 2026
+  tags: [VR, Unity, Python, 3D Environments]
+  summary: >-
+    An interactive recreation of imperial China, with explorable scenes such
+    as the emperor's office and a merchant hall.
+  video: ""
+  repo: ""
+
+- title: CECS 571 Semantic Risk
+  emoji: 🧩
+  year: 2026
+  tags: [Course Project, Semantic Web]
+  summary: >-
+    Course project for CECS 571 on modeling and analyzing semantic risk.
+  video: ""
+  repo: https://github.com/AliLan/Project1
+
+- title: Advanced AI Team Project
+  emoji: 🤖
+  year: 2025
+  tags: [AI, Team Project]
+  summary: >-
+    Team project for the Advanced Artificial Intelligence course.
+  video: ""
+  repo: https://github.com/AliLan/TCL-team
+
+- title: CECS 530 Midterm Flashcards
+  emoji: 🗂️
+  year: 2026
+  tags: [Study Tool, HTML, JavaScript]
+  summary: >-
+    Interactive flip cards for CECS 530 computer architecture definitions,
+    with Chinese hints for tricky terms.
+  video: ""
+  repo: ""
+  link: /cecs530-flashcards/

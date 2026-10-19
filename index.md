@@ -1,55 +1,33 @@
 ---
 layout: default
-title: 欢迎来到我的博客
-subtitle: 记录我的学习与成长
+title: Welcome to My Blog
+subtitle: Recording my learning and growth
+permalink: /
 ---
 
-<!-- 语言选择弹窗 -->
-<div id="languageModal" class="language-modal">
-  <div class="language-modal-content">
-    <div class="language-modal-header">
-      <h2>🌍 选择语言 / Choose Language</h2>
-    </div>
-    <div class="language-modal-body">
-      <p>请选择您偏好的语言 / Please select your preferred language:</p>
-      <div class="language-buttons">
-        <button class="language-btn chinese-btn" onclick="selectLanguage('chinese')">
-          <span class="flag">🇨🇳</span>
-          <span class="language-text">中文</span>
-          <span class="language-sub">Chinese</span>
-        </button>
-        <button class="language-btn english-btn" onclick="selectLanguage('english')">
-          <span class="flag">🇺🇸</span>
-          <span class="language-text">English</span>
-          <span class="language-sub">英语</span>
-        </button>
-      </div>
-    </div>
-  </div>
-</div>
-
-<div style="text-align:right; margin-top:1rem;">
-  <b>中文</b> | <a href="{{ '/en/' | relative_url }}">English</a>
+<div class="lang-switch" style="text-align:right; margin-top:1rem;">
+  <a href="{{ '/zh/' | relative_url }}" lang="zh-CN">切换中文</a>
 </div>
 
 <div class="nature-bg">
   <div class="main-columns">
     <div class="main-left">
-      <h1>👋 Hi, 我是丽华</h1>
-      <p class="lead">欢迎来到我的个人博客！这里记录了我的学习成长、技术探索与生活灵感。</p>
+      <h1>👋 Hi, I'm Lihua</h1>
+      <p class="lead">Welcome to my personal blog! Here I record my learning, tech explorations, and inspirations.</p>
       <div class="colorful-section gradient-pinkblue">
-        <h2>🚀 精选主题</h2>
+        <h2>🚀 Featured Topics</h2>
         <ul class="post-highlights">
-          <li>🤖 <b>AI/机器学习</b>：最新技术与实战经验</li>
-          <li>💻 <b>Web开发</b>：前端、后端与全栈成长</li>
-          <li>🧠 <b>算法</b>：刷题与竞赛心得</li>
-          <li>🌈 <b>生活</b>：灵感、随笔与成长故事</li>
+          <li>🤖 <b>AI/Machine Learning</b>: Latest technology and hands-on experience</li>
+          <li>💻 <b>Web Development</b>: Frontend, backend, and full-stack growth</li>
+          <li>🧠 <b>Algorithms</b>: Coding practice and competition insights</li>
+          <li>🌈 <b>Life</b>: Inspiration, essays, and growth stories</li>
         </ul>
+        <p><a href="{{ '/projects/' | relative_url }}" class="social-link">🛠️ See my projects →</a></p>
       </div>
     </div>
     <div class="main-right">
       <div class="colorful-section gradient-bluegreen posts-list-section">
-        <h2>📝 最新文章</h2>
+        <h2>📝 Latest Posts</h2>
         <ul class="posts-list">
           {% for post in site.posts limit:8 %}
           <li class="post-card">
@@ -65,8 +43,8 @@ subtitle: 记录我的学习与成长
 
   <div class="bottom-sections">
     <div class="colorful-section gradient-bluegreen about-section">
-      <h2>🌟 关于我</h2>
-      <p>计算机专业研究生，热爱技术、设计与分享。目标是用代码和创意让世界更美好。</p>
+      <h2>🌟 About Me</h2>
+      <p>Graduate student in Computer Science, passionate about technology, design, and sharing. My goal is to make the world better with code and creativity.</p>
       <div class="about-icons">
         <span title="AI Enthusiast">🤖</span>
         <span title="Web Developer">💻</span>
@@ -75,7 +53,7 @@ subtitle: 记录我的学习与成长
       </div>
     </div>
     <div class="colorful-section gradient-yellowpink contact-section">
-      <h2>📬 联系我</h2>
+      <h2>📬 Contact Me</h2>
       <div class="social-links">
         <a href="https://github.com/AliLan" class="social-link">GitHub</a>
         <a href="mailto:your-email@example.com" class="social-link">Email</a>
@@ -243,6 +221,7 @@ subtitle: 记录我的学习与成长
   background: #fff;
   color: #ff6b9d;
 }
+
 @media (max-width: 900px) {
   .main-columns, .bottom-sections {
     flex-direction: column;
@@ -254,6 +233,7 @@ subtitle: 记录我的学习与成长
     min-width: 0;
   }
 }
+
 @media (max-width: 600px) {
   .home h1 { font-size: 2.1rem; }
   .colorful-section { padding: 1.2rem 0.5rem; }
@@ -263,174 +243,5 @@ subtitle: 记录我的学习与成长
   .tree1 { width: 40px; }
   .tree2 { width: 32px; }
 }
-
-/* 语言选择弹窗样式 */
-.language-modal {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.7);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: 9999;
-  backdrop-filter: blur(5px);
-}
-
-.language-modal-content {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-  border-radius: 20px;
-  padding: 2.5rem;
-  max-width: 500px;
-  width: 90%;
-  text-align: center;
-  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
-  animation: modalSlideIn 0.5s ease-out;
-}
-
-@keyframes modalSlideIn {
-  from {
-    opacity: 0;
-    transform: translateY(-50px) scale(0.9);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0) scale(1);
-  }
-}
-
-.language-modal-header h2 {
-  color: white;
-  font-size: 1.8rem;
-  margin-bottom: 1rem;
-  font-weight: 700;
-}
-
-.language-modal-body p {
-  color: rgba(255, 255, 255, 0.9);
-  font-size: 1.1rem;
-  margin-bottom: 2rem;
-}
-
-.language-buttons {
-  display: flex;
-  gap: 1.5rem;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-
-.language-btn {
-  background: rgba(255, 255, 255, 0.15);
-  border: 2px solid rgba(255, 255, 255, 0.3);
-  border-radius: 15px;
-  padding: 1.5rem 2rem;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  backdrop-filter: blur(10px);
-  min-width: 140px;
-}
-
-.language-btn:hover {
-  background: rgba(255, 255, 255, 0.25);
-  border-color: rgba(255, 255, 255, 0.5);
-  transform: translateY(-3px);
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
-}
-
-.language-btn:active {
-  transform: translateY(-1px);
-}
-
-.flag {
-  display: block;
-  font-size: 2.5rem;
-  margin-bottom: 0.5rem;
-}
-
-.language-text {
-  display: block;
-  color: white;
-  font-size: 1.3rem;
-  font-weight: 700;
-  margin-bottom: 0.2rem;
-}
-
-.language-sub {
-  display: block;
-  color: rgba(255, 255, 255, 0.8);
-  font-size: 0.9rem;
-}
-
-.chinese-btn:hover {
-  background: linear-gradient(135deg, rgba(255, 107, 157, 0.3) 0%, rgba(90, 200, 250, 0.3) 100%);
-}
-
-.english-btn:hover {
-  background: linear-gradient(135deg, rgba(90, 200, 250, 0.3) 0%, rgba(0, 201, 167, 0.3) 100%);
-}
-
-@media (max-width: 600px) {
-  .language-modal-content {
-    padding: 2rem 1.5rem;
-  }
-  
-  .language-buttons {
-    flex-direction: column;
-    gap: 1rem;
-  }
-  
-  .language-btn {
-    min-width: auto;
-    width: 100%;
-  }
-}
 </style>
 
-<script>
-// 语言选择功能
-function selectLanguage(language) {
-  // 保存用户的语言选择到本地存储
-  localStorage.setItem('preferredLanguage', language);
-  
-  // 隐藏弹窗
-  document.getElementById('languageModal').style.display = 'none';
-  
-  // 根据选择跳转到相应页面
-  if (language === 'english') {
-    window.location.href = '{{ "/en/" | relative_url }}';
-  }
-  // 如果选择中文，保持在当前页面
-}
-
-// 页面加载时检查是否已经选择过语言
-document.addEventListener('DOMContentLoaded', function() {
-  const preferredLanguage = localStorage.getItem('preferredLanguage');
-  
-  // 如果用户已经选择过语言，隐藏弹窗
-  if (preferredLanguage) {
-    document.getElementById('languageModal').style.display = 'none';
-  }
-  
-  // 如果用户直接访问英文页面，也隐藏弹窗
-  if (window.location.pathname === '{{ "/en/" | relative_url }}') {
-    document.getElementById('languageModal').style.display = 'none';
-  }
-});
-
-// 添加键盘快捷键支持
-document.addEventListener('keydown', function(event) {
-  const modal = document.getElementById('languageModal');
-  if (modal.style.display !== 'none') {
-    if (event.key === '1' || event.key === 'c') {
-      selectLanguage('chinese');
-    } else if (event.key === '2' || event.key === 'e') {
-      selectLanguage('english');
-    } else if (event.key === 'Escape') {
-      // ESC键选择中文（默认）
-      selectLanguage('chinese');
-    }
-  }
-});
-</script>

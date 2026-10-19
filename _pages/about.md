@@ -4,65 +4,59 @@ title: About Me
 permalink: /about/
 ---
 
-# 👨‍🎓 关于我
+# 👩‍🎓 About Me
 
-你好！我是**丽华**，一名计算机科学专业的研究生，热爱技术分享和学习。
+Hi! I'm **Lihua**, a graduate student in Computer Science who loves learning and sharing what I build.
 
-## 🎯 教育背景
+## 🎯 Education
 
-- **研究生** - 计算机科学与技术
-- **研究方向** - 人工智能、机器学习、数据科学
-- **本科** - 计算机科学与技术
+- **Graduate** - Computer Science
+- **Research interests** - Artificial intelligence, machine learning, data science, VR
+- **Undergraduate** - Computer Science and Technology
 
-## 💻 技术栈
+## 💻 Tech Stack
 
-### 编程语言
-- **Python** - 机器学习、数据分析、Web开发
-- **JavaScript/TypeScript** - 前端开发、Node.js
-- **Java** - 后端开发、Android开发
-- **C++** - 算法竞赛、系统编程
+### Languages
+- **Python** - Machine learning, data analysis, web development
+- **C#** - Unity and VR development
+- **JavaScript/TypeScript** - Frontend, Node.js
+- **Java** - Backend, Android
+- **C++** - Algorithms, systems programming
 
-### 框架与工具
-- **机器学习**: TensorFlow, PyTorch, Scikit-learn
-- **Web开发**: React, Vue.js, Django, Flask
-- **数据库**: MySQL, PostgreSQL, MongoDB
-- **云服务**: AWS, Google Cloud, Docker
+### Frameworks & Tools
+- **Machine learning**: TensorFlow, PyTorch, Scikit-learn
+- **Web**: React, Vue.js, Django, Flask
+- **XR**: Unity, XR Interaction Toolkit
+- **Databases**: MySQL, PostgreSQL, MongoDB
+- **Cloud**: AWS, Google Cloud, Docker
 
-## 🚀 项目经验
+## 🚀 Projects
 
-### 学术项目
-- **智能推荐系统** - 基于深度学习的个性化推荐算法
-- **自然语言处理** - 中文文本分类与情感分析
-- **计算机视觉** - 图像识别与目标检测
+See the [Projects]({{ '/projects/' | relative_url }}) page for my VR work and course projects.
 
-### 开源贡献
-- 积极参与开源项目
-- 维护个人技术博客
-- 分享学习笔记和教程
+## 📚 Goals
 
-## 📚 学习目标
+1. **Go deep** - Keep growing in AI, machine learning, and immersive tech
+2. **Share** - Write up what I learn on this blog
+3. **Open source** - Contribute to meaningful open-source projects
+4. **Keep learning** - Stay curious about new technology
 
-1. **深入研究** - 在人工智能和机器学习领域深耕
-2. **技术分享** - 通过博客分享学习心得和技术见解
-3. **开源贡献** - 参与更多有意义的开源项目
-4. **持续学习** - 保持对新技术的敏感度和学习热情
+## 🎨 Interests
 
-## 🎨 兴趣爱好
+- **Reading** - Technical books and papers
+- **Open source** - Following and joining open-source communities
+- **Writing** - Recording what I learn along the way
+- **Competitive programming** - Sharpening algorithm skills
 
-- **技术阅读** - 喜欢阅读技术书籍和论文
-- **开源项目** - 关注和参与开源社区
-- **技术写作** - 记录学习过程和心得体会
-- **算法竞赛** - 参与编程竞赛提升算法能力
-
-## 📞 联系方式
+## 📞 Contact
 
 - **GitHub**: [AliLan](https://github.com/AliLan)
 - **Email**: your-email@example.com
-- **LinkedIn**: [丽华](https://linkedin.com/in/your-profile)
+- **LinkedIn**: [Lihua Lan](https://linkedin.com/in/your-profile)
 
 ---
 
-*"学习是一个持续的过程，技术发展日新月异，保持好奇心和学习热情是我前进的动力。"*
+*"Learning never stops. Technology moves fast, and curiosity is what keeps me going."*
 
 <style>
 .about-content {
