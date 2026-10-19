@@ -23,32 +23,3 @@
     as the emperor's office and a merchant hall.
   video: ""
   repo: ""
-
-- title: CECS 571 Semantic Risk
-  emoji: 🧩
-  year: 2026
-  tags: [Course Project, Semantic Web]
-  summary: >-
-    Course project for CECS 571 on modeling and analyzing semantic risk.
-  video: ""
-  repo: https://github.com/AliLan/Project1
-
-- title: Advanced AI Team Project
-  emoji: 🤖
-  year: 2025
-  tags: [AI, Team Project]
-  summary: >-
-    Team project for the Advanced Artificial Intelligence course.
-  video: ""
-  repo: https://github.com/AliLan/TCL-team
-
-- title: CECS 530 Midterm Flashcards
-  emoji: 🗂️
-  year: 2026
-  tags: [Study Tool, HTML, JavaScript]
-  summary: >-
-    Interactive flip cards for CECS 530 computer architecture definitions,
-    with Chinese hints for tricky terms.
-  video: ""
-  repo: ""
-  link: /cecs530-flashcards/

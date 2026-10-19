@@ -6,7 +6,7 @@ permalink: /projects/
 
 <div class="projects-page">
   <h1>🛠️ Projects</h1>
-  <p class="projects-lead">A few things I've built, from VR experiences to course projects. Demo videos are on the way.</p>
+  <p class="projects-lead">My own projects, mostly VR. Demo videos are on the way. Course work lives under <a href="{{ '/courses/' | relative_url }}">Master Course Projects</a>.</p>
 
   <div class="project-grid">
     {% for p in site.data.projects %}

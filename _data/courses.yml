@@ -1,0 +1,48 @@
+# Master's course projects, shown under "Master Course Projects".
+# Each course has a page at /courses/<slug>/ (see courses/<slug>.md).
+# Add work to a course by appending to its `items`:
+#   - title: ...
+#     summary: ...
+#     link: /some-page/        # page on this site (optional)
+#     repo: https://github.com/...  # public code (optional)
+#     pdf: /assets/papers/xxx.pdf   # uploaded paper (optional)
+
+- slug: advanced-algorithms
+  name: Advanced Algorithms
+  emoji: 🧠
+  items: []
+
+- slug: semantic-web
+  name: Semantic Web
+  emoji: 🕸️
+  items:
+    - title: cornercase
+      summary: Semantic Web course project.
+      repo: https://github.com/AliLan/cornercase
+
+- slug: advanced-software-technology
+  name: Advanced Software Technology
+  emoji: 🛠️
+  items:
+    - title: My Paper
+      summary: Paper coming soon.
+
+- slug: advanced-programming-languages
+  name: Advanced Programming Languages
+  emoji: 🔤
+  items: []
+
+- slug: advanced-artificial-intelligence
+  name: Advanced Artificial Intelligence
+  emoji: 🤖
+  items: []
+
+- slug: advanced-computer-architecture
+  name: Advanced Computer Architecture
+  emoji: 🖥️
+  items:
+    - title: Midterm Definition Flashcards
+      summary: >-
+        Interactive flip cards for computer architecture definitions, with
+        Chinese hints for tricky terms.
+      link: /cecs530-flashcards/
