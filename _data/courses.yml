@@ -24,8 +24,12 @@
   name: Advanced Software Technology
   emoji: 🛠️
   items:
-    - title: My Paper
-      summary: Paper coming soon.
+    - title: Enhancing Requirement Analysis with Hybrid AI-Based Question Answering Systems
+      summary: >-
+        Co-authored and presented at SEET 2026. Combines BM25, BGE embeddings,
+        Reciprocal Rank Fusion (RRF), and cross-encoder re-ranking for
+        requirement analysis. Evaluated on 387 requirement QA pairs, it improved
+        retrieval recall by up to 13.3% with higher nDCG ranking quality.
 
 - slug: advanced-programming-languages
   name: Advanced Programming Languages

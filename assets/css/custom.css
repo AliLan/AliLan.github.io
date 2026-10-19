@@ -5,7 +5,7 @@
   --accent-color: #007aff; /* Apple blue */
   --text-color: #1d1d1f; /* Apple dark text */
   --light-text: #86868b; /* Apple light text */
-  --background: #f0f8ff; /* Light blue background */
+  --background: #fff8e1; /* Pale yellow background */
   --card-background: #ffffff; /* White cards */
   --light-background: #f5f5f7; /* Apple light gray */
   --border-color: #d2d2d7; /* Apple border */
@@ -21,7 +21,9 @@
 }
 
 body {
-  background: var(--background);
+  background: linear-gradient(180deg, #fffdf3 0%, #fff6d8 55%, #ffedb8 100%) fixed;
+  background-color: var(--background);
+  min-height: 100vh;
   color: var(--text-color);
   font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'SF Pro Text', 'Helvetica Neue', Arial, sans-serif;
   line-height: 1.6;

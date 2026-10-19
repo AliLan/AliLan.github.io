@@ -1,7 +1,7 @@
 title: Lihua Lan
 author: Lihua Lan
 lang: en
-description: "My graduate school journey: tech notes, study notes, and projects"
+description: "Software engineer and M.S. Computer Science student at CSULB: AI, information retrieval, and VR"
 baseurl: ""
 url: "https://alilan.github.io"
 theme: minima
@@ -24,15 +24,13 @@ seo:
   description: "My graduate school journey: tech articles, study notes, and project write-ups"
   author: "Lihua Lan"
   image: "/assets/images/og-image.jpg"
-  twitter:
-    creator: "@your_twitter_handle"
 
 # Social Media
 social:
   name: Lihua Lan
   links:
     - https://github.com/AliLan
-    - https://linkedin.com/in/your-profile
+    - https://www.linkedin.com/in/lihualan
     - mailto:lihualan2025@gmail.com
 
 # Collections

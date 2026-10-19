@@ -6,7 +6,7 @@ permalink: /projects/
 
 <div class="projects-page">
   <h1>🛠️ Projects</h1>
-  <p class="projects-lead">My own projects, mostly VR. Demo videos are on the way. Course work lives under <a href="{{ '/courses/' | relative_url }}">Master Course Projects</a>.</p>
+  <p class="projects-lead">VR experiences from the CSULB XR Lab and AI / data projects. Demo videos are on the way. Course work lives under <a href="{{ '/courses/' | relative_url }}">Master Course Projects</a>.</p>
 
   <div class="project-grid">
     {% for p in site.data.projects %}
@@ -26,7 +26,7 @@ permalink: /projects/
         {% endif %}
       </div>
       <div class="project-body">
-        <h2>{{ p.title }} <span class="project-year">{{ p.year }}</span></h2>
+        <h2>{{ p.title }}{% if p.year %} <span class="project-year">{{ p.year }}</span>{% endif %}</h2>
         <p>{{ p.summary }}</p>
         <ul class="project-tags">
           {% for t in p.tags %}<li>{{ t }}</li>{% endfor %}

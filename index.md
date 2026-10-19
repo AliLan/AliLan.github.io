@@ -13,14 +13,14 @@ permalink: /
   <div class="main-columns">
     <div class="main-left">
       <h1>Hi, I'm Lihua</h1>
-      <p class="lead">Welcome to my personal blog! Here I record my learning, tech explorations, and inspirations.</p>
+      <p class="lead">Software engineer with 4+ years in FinTech, now pursuing an M.S. in Computer Science at CSULB with a focus on AI and information retrieval. I also build VR experiences at the CSULB XR Lab.</p>
       <div class="colorful-section gradient-pinkblue">
         <h2>Featured Topics</h2>
         <ul class="post-highlights">
-          <li><b>AI/Machine Learning</b>: Latest technology and hands-on experience</li>
-          <li><b>Web Development</b>: Frontend, backend, and full-stack growth</li>
-          <li><b>Algorithms</b>: Coding practice and competition insights</li>
-          <li><b>Life</b>: Inspiration, essays, and growth stories</li>
+          <li><b>AI &amp; Information Retrieval</b>: Hybrid search with BM25, embeddings, and re-ranking</li>
+          <li><b>VR / XR</b>: Interactive experiences built with Unity3D, C#, and Blender</li>
+          <li><b>Backend Systems</b>: Java, Spring Cloud, and Kafka platforms from my FinTech work</li>
+          <li><b>Knowledge Graphs &amp; Recommenders</b>: Neo4j, KNN, and collaborative filtering</li>
         </ul>
         <p><a href="{{ '/projects/' | relative_url }}" class="social-link">See my projects →</a></p>
       </div>
@@ -44,12 +44,14 @@ permalink: /
   <div class="bottom-sections">
     <div class="colorful-section gradient-bluegreen about-section">
       <h2>About Me</h2>
-      <p>Graduate student in Computer Science, passionate about technology, design, and sharing. My goal is to make the world better with code and creativity.</p>
+      <p>M.S. Computer Science student at California State University, Long Beach, and former software engineer at Rural Commercial Bank of Fuzhou, where I led a corporate lending platform serving 110,000+ customers and built an accounting platform for 2,500+ merchants. Co-author of a SEET 2026 paper on hybrid AI-based question answering for requirement analysis.</p>
+      <p><a href="{{ '/about/' | relative_url }}" class="social-link">More about me →</a> <a href="{{ '/cv/' | relative_url }}" class="social-link">View CV →</a></p>
     </div>
     <div class="colorful-section gradient-yellowpink contact-section">
       <h2>Contact Me</h2>
       <div class="social-links">
         <a href="https://github.com/AliLan" class="social-link">GitHub</a>
+        <a href="https://www.linkedin.com/in/lihualan" class="social-link">LinkedIn</a>
         <a href="mailto:lihualan2025@gmail.com" class="social-link">Email</a>
       </div>
     </div>

@@ -4,59 +4,49 @@ title: About Me
 permalink: /about/
 ---
 
-# 👩‍🎓 About Me
+# About Me
 
-Hi! I'm **Lihua**, a graduate student in Computer Science who loves learning and sharing what I build.
+Hi! I'm **Lihua Lan**, a software engineer with 4+ years of experience in FinTech. I'm now pursuing an M.S. in Computer Science at California State University, Long Beach, focusing on AI and information retrieval. I also build VR experiences at the CSULB XR Lab.
 
-## 🎯 Education
+## What I Work On
 
-- **Graduate** - Computer Science
-- **Research interests** - Artificial intelligence, machine learning, data science, VR
-- **Undergraduate** - Computer Science and Technology
+- **AI-powered search and retrieval** - Hybrid lexical and semantic retrieval with BM25, BGE embeddings, Reciprocal Rank Fusion, and cross-encoder re-ranking
+- **VR / XR** - Interactive VR applications in Unity3D, C#, and Blender
+- **Backend systems** - Large-scale lending and accounting platforms with Java, Spring Cloud, and Kafka
 
-## 💻 Tech Stack
+## Education
 
-### Languages
-- **Python** - Machine learning, data analysis, web development
-- **C#** - Unity and VR development
-- **JavaScript/TypeScript** - Frontend, Node.js
-- **Java** - Backend, Android
-- **C++** - Algorithms, systems programming
+- **M.S. in Computer Science** - California State University, Long Beach (Jan 2026 - Dec 2027)
+- **B.S. in Computer Science and Technology** - Central China Normal University (2016 - 2020)
 
-### Frameworks & Tools
-- **Machine learning**: TensorFlow, PyTorch, Scikit-learn
-- **Web**: React, Vue.js, Django, Flask
-- **XR**: Unity, XR Interaction Toolkit
-- **Databases**: MySQL, PostgreSQL, MongoDB
-- **Cloud**: AWS, Google Cloud, Docker
+## Experience
 
-## 🚀 Projects
+- **XR Student Assistant** - CSULB XR Lab, Academic Technology Services (Jan 2026 - May 2027)
+- **Software Engineer** - Rural Commercial Bank of Fuzhou (Apr 2020 - Aug 2024)
 
-See the [Projects]({{ '/projects/' | relative_url }}) page for my VR work and course projects.
+## Research
 
-## 📚 Goals
+- **Enhancing Requirement Analysis with Hybrid AI-Based Question Answering Systems** - SEET 2026 (co-author and presenter)
 
-1. **Go deep** - Keep growing in AI, machine learning, and immersive tech
-2. **Share** - Write up what I learn on this blog
-3. **Open source** - Contribute to meaningful open-source projects
-4. **Keep learning** - Stay curious about new technology
+## Skills
 
-## 🎨 Interests
+- **AI & Machine Learning**: BM25, BGE Embeddings, Reciprocal Rank Fusion (RRF), cross-encoder re-ranking, KNN, collaborative filtering
+- **Languages**: Java, Python, SQL, JavaScript, C++, C#
+- **Frameworks & Data**: Spring Cloud, Kafka, React, REST APIs, MySQL, Oracle, Neo4j, MongoDB
+- **Tools**: Docker, Git, Unity3D, Blender
 
-- **Reading** - Technical books and papers
-- **Open source** - Following and joining open-source communities
-- **Writing** - Recording what I learn along the way
-- **Competitive programming** - Sharpening algorithm skills
+## Honors & Awards
 
-## 📞 Contact
+- **National First Prize**, Chinese Collegiate Computing Competition - Software Design (2019)
+- **National First Prize**, China Robot Competition - Humanoid Robotics (2017)
 
-- **GitHub**: [AliLan](https://github.com/AliLan)
+## Contact
+
 - **Email**: [lihualan2025@gmail.com](mailto:lihualan2025@gmail.com)
-- **LinkedIn**: [Lihua Lan](https://linkedin.com/in/your-profile)
+- **GitHub**: [AliLan](https://github.com/AliLan)
+- **LinkedIn**: [lihualan](https://www.linkedin.com/in/lihualan)
 
----
-
-*"Learning never stops. Technology moves fast, and curiosity is what keeps me going."*
+See my full [CV]({{ '/cv/' | relative_url }}), [projects]({{ '/projects/' | relative_url }}), and [master course projects]({{ '/courses/' | relative_url }}).
 
 <style>
 .about-content {

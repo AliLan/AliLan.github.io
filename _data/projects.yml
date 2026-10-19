@@ -4,22 +4,51 @@
 #   - a file in this repo, e.g. /assets/videos/mosque-vr.mp4
 # `repo` is only shown for public repositories.
 
-- title: Mosque VR
+- title: Virtual Mosque
   emoji: 🕌
   year: 2026
-  tags: [VR, Unity, C#, XR Interaction Toolkit]
+  tags: [VR, Unity3D, C#, Blender, CSULB XR Lab]
   summary: >-
-    An immersive VR walkthrough of a mosque interior, built in Unity with
-    hand-controller interaction, stained-glass windows, and custom lighting.
+    An immersive VR walkthrough of a mosque interior, built at the CSULB XR Lab
+    with Blender, Unity3D, and C#, using AI-assisted (MCP) workflows for rapid
+    prototyping.
+  video: ""
+  repo: ""
+
+- title: Food Label Guide
+  emoji: 🥫
+  year: 2026
+  tags: [VR, Unity3D, C#, CSULB XR Lab]
+  summary: >-
+    An interactive VR food label guide, prototyped at the CSULB XR Lab with
+    Blender, Unity3D, and C#.
   video: ""
   repo: ""
 
 - title: Imperial China
   emoji: 🏯
   year: 2026
-  tags: [VR, Unity, Python, 3D Environments]
+  tags: [VR, Unity3D, 3D Environments]
   summary: >-
     An interactive recreation of imperial China, with explorable scenes such
     as the emperor's office and a merchant hall.
+  video: ""
+  repo: ""
+
+- title: Intelligent Recommendation System
+  emoji: 🎯
+  tags: [Python, KNN, Collaborative Filtering, React]
+  summary: >-
+    A personalized recommendation system that uses KNN and collaborative
+    filtering on user interaction data, with a React-based interface.
+  video: ""
+  repo: ""
+
+- title: CS Learning Platform with Knowledge Graphs
+  emoji: 🕸️
+  tags: [Java, React, Neo4j]
+  summary: >-
+    A Neo4j knowledge graph of 500+ interconnected computer science concepts,
+    with Java services and an interactive React graph visualization.
   video: ""
   repo: ""

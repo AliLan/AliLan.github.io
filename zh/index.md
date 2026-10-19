@@ -14,14 +14,14 @@ lang: zh-CN
   <div class="main-columns">
     <div class="main-left">
       <h1>Hi, 我是丽华</h1>
-      <p class="lead">欢迎来到我的个人博客！这里记录了我的学习成长、技术探索与生活灵感。</p>
+      <p class="lead">有 4 年以上金融科技行业经验的软件工程师，目前在加州州立大学长滩分校（CSULB）攻读计算机科学硕士，方向是 AI 与信息检索；同时在 CSULB XR Lab 开发 VR 体验。</p>
       <div class="colorful-section gradient-pinkblue">
         <h2>精选主题</h2>
         <ul class="post-highlights">
-          <li><b>AI/机器学习</b>：最新技术与实战经验</li>
-          <li><b>Web开发</b>：前端、后端与全栈成长</li>
-          <li><b>算法</b>：刷题与竞赛心得</li>
-          <li><b>生活</b>：灵感、随笔与成长故事</li>
+          <li><b>AI 与信息检索</b>：BM25、向量嵌入与重排序的混合检索</li>
+          <li><b>VR / XR</b>：用 Unity3D、C# 和 Blender 制作交互式体验</li>
+          <li><b>后端系统</b>：金融科技工作中的 Java、Spring Cloud 与 Kafka 平台</li>
+          <li><b>知识图谱与推荐系统</b>：Neo4j、KNN 与协同过滤</li>
         </ul>
       </div>
     </div>
@@ -44,12 +44,14 @@ lang: zh-CN
   <div class="bottom-sections">
     <div class="colorful-section gradient-bluegreen about-section">
       <h2>关于我</h2>
-      <p>计算机专业研究生，热爱技术、设计与分享。目标是用代码和创意让世界更美好。</p>
+      <p>CSULB 计算机科学硕士在读，曾任福州农村商业银行软件工程师，主导开发服务 11 万多家客户的对公贷款平台，并搭建了服务 2,500 多家商户的智能记账平台。SEET 2026 论文合著者，研究方向为基于混合 AI 问答系统的需求分析。</p>
+      <p><a href="{{ '/about/' | relative_url }}" class="social-link">关于我（英文）→</a> <a href="{{ '/cv/' | relative_url }}" class="social-link">简历（英文）→</a></p>
     </div>
     <div class="colorful-section gradient-yellowpink contact-section">
       <h2>联系我</h2>
       <div class="social-links">
         <a href="https://github.com/AliLan" class="social-link">GitHub</a>
+        <a href="https://www.linkedin.com/in/lihualan" class="social-link">LinkedIn</a>
         <a href="mailto:lihualan2025@gmail.com" class="social-link">Email</a>
       </div>
     </div>
