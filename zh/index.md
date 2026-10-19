@@ -59,7 +59,10 @@ lang: zh-CN
 <style>
 .nature-bg {
   min-height: 100vh;
-  background: linear-gradient(180deg, #8fd6ff 0%, #eaf6ff 70%, #eaf6ff 100%);
+  background: #4fb0b4 url("{{ '/assets/images/beach-bg.svg' | relative_url }}") center top / 100% 100% no-repeat;
+  border-radius: 1.5rem;
+  padding: 0 1.5rem;
+  box-sizing: border-box;
   position: relative;
   overflow: hidden;
   max-width: 1500px;
@@ -80,6 +83,10 @@ lang: zh-CN
   flex: 1 1 0;
   min-width: 320px;
   max-width: 520px;
+}
+.main-left > h1, .main-left > .lead {
+  color: #fff;
+  text-shadow: 0 2px 12px rgba(0, 60, 70, 0.35);
 }
 .main-left {
   margin-right: 0.5rem;
