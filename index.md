@@ -12,8 +12,10 @@ permalink: /
 <div class="nature-bg">
   <div class="main-columns">
     <div class="main-left">
-      <h1>Hi, I'm Lihua</h1>
-      <p class="lead">Software engineer with 4+ years in FinTech, now pursuing an M.S. in Computer Science at CSULB with a focus on AI and information retrieval. I also build VR experiences at the CSULB XR Lab.</p>
+      <div class="hero-card">
+        <h1>Hi, I'm Lihua</h1>
+        <p class="lead">Software engineer with 4+ years in FinTech, now pursuing an M.S. in Computer Science at CSULB with a focus on AI and information retrieval. I also build VR experiences at the CSULB XR Lab.</p>
+      </div>
       <div class="colorful-section gradient-pinkblue">
         <h2>Featured Topics</h2>
         <ul class="post-highlights">
@@ -86,9 +88,21 @@ permalink: /
   min-width: 320px;
   max-width: 520px;
 }
-.main-left > h1, .main-left > .lead {
+.hero-card {
+  background: #1d4e5f;
+  border-radius: 1.5rem;
+  padding: 2rem 1.8rem;
+  margin-top: 2.5rem;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.12);
+}
+.hero-card h1 {
   color: #fff;
-  text-shadow: 0 2px 12px rgba(0, 60, 70, 0.35);
+  margin: 0 0 0.8rem;
+}
+.hero-card .lead {
+  color: #e6f1f3;
+  margin: 0;
+  line-height: 1.7;
 }
 .main-left {
   margin-right: 0.5rem;
