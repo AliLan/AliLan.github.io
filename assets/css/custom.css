@@ -165,7 +165,7 @@ svg { fill: none; stroke: currentColor; stroke-width: 1.75; stroke-linecap: roun
   border: 1px solid var(--border);
   overflow: hidden;
 }
-.hero-art img { width: 100%; height: 100%; object-fit: cover; object-position: 50% 35%; display: block; }
+.hero-art img { width: 100%; height: 100%; object-fit: cover; object-position: 50% 40%; display: block; }
 
 /* Sections */
 .section { padding: 24px 0 72px; }
@@ -387,7 +387,7 @@ textarea.field { min-height: 140px; resize: vertical; }
   .grid-3 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .skill-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
   .hero-grid { grid-template-columns: 1fr; }
-  .hero-art { display: none; }
+  .hero-art { order: -1; justify-self: start; width: 144px; height: 144px; }
   .about-grid, .contact-grid { grid-template-columns: 1fr; }
 }
 
