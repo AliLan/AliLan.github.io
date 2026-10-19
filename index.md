@@ -50,7 +50,7 @@ permalink: /
       <h2>Contact Me</h2>
       <div class="social-links">
         <a href="https://github.com/AliLan" class="social-link">GitHub</a>
-        <a href="mailto:your-email@example.com" class="social-link">Email</a>
+        <a href="mailto:lihualan2025@gmail.com" class="social-link">Email</a>
       </div>
     </div>
   </div>

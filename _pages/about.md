@@ -51,7 +51,7 @@ See the [Projects]({{ '/projects/' | relative_url }}) page for my VR work and co
 ## 📞 Contact
 
 - **GitHub**: [AliLan](https://github.com/AliLan)
-- **Email**: your-email@example.com
+- **Email**: [lihualan2025@gmail.com](mailto:lihualan2025@gmail.com)
 - **LinkedIn**: [Lihua Lan](https://linkedin.com/in/your-profile)
 
 ---
