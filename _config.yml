@@ -18,12 +18,12 @@ permalink: /:year/:month/:day/:title/
 paginate: 5
 paginate_path: "/page/:num/"
 
-# SEO Settings
-seo:
-  title: "Lihua Lan - Graduate Notes & Projects"
-  description: "My graduate school journey: tech articles, study notes, and project write-ups"
-  author: "Lihua Lan"
-  image: "/assets/images/og-image.jpg"
+# Share preview image (og:image / twitter:image) for every page
+defaults:
+  - scope:
+      path: ""
+    values:
+      image: /assets/images/profile.jpg
 
 # Social Media
 social:
