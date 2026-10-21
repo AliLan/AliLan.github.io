@@ -1,0 +1,16 @@
+{%- include lang.html -%}
+{%- assign r = include.r -%}
+<article class="card">
+  <ul class="chips">
+    <li class="chip">{{ r.venue }}</li>
+    <li class="chip">{% if zh and r.course_zh %}{{ r.course_zh }}{% else %}{{ r.course }}{% endif %}</li>
+  </ul>
+  <h3 class="card-title">{% if zh and r.title_zh %}{{ r.title_zh }}{% else %}{{ r.title }}{% endif %}</h3>
+  {%- if zh and r.title_zh %}<p class="muted" style="font-size:13px;margin:-4px 0 8px">{{ r.title }}</p>{% endif %}
+  <p class="muted" style="font-size:13px;margin:0 0 10px">{{ r.authors }}</p>
+  <p class="card-desc">{% if zh and r.summary_zh %}{{ r.summary_zh }}{% else %}{{ r.summary }}{% endif %}</p>
+  <ul class="chips">{% for tg in r.tags %}<li class="chip">{{ tg }}</li>{% endfor %}</ul>
+  <div class="links">
+    {%- if r.pdf %}<a href="{{ r.pdf | relative_url }}">{% include icon.html name="file" %}{{ t.read_pdf }}</a>{% endif %}
+  </div>
+</article>

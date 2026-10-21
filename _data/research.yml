@@ -1,0 +1,19 @@
+# Papers shown in the homepage Research section.
+- title: Enhancing Requirement Analysis with Hybrid AI-Based Question Answering Systems
+  title_zh: 基于混合 AI 问答系统的需求分析增强
+  authors: Yongyan Liang, Lihua Lan, Muhammad Abdul Basit Ur Rahim
+  venue: SEET 2026
+  course: CECS 524 Software Engineering
+  course_zh: CECS 524 软件工程
+  summary: >-
+    Extends the QAssist framework for requirement analysis with BGE embeddings,
+    a BGE cross-encoder reranker, and hybrid lexical + semantic retrieval
+    (BM25 with Reciprocal Rank Fusion). Evaluated on the REQuestA dataset with
+    GTv6 and DexV2: up to 13.3% higher retrieval recall and better nDCG ranking
+    quality, at the cost of longer execution time.
+  summary_zh: >-
+    在需求分析问答框架 QAssist 的基础上，引入 BGE 向量嵌入、BGE 交叉编码器重排序，以及结合 BM25
+    与倒数排名融合（RRF）的词法 + 语义混合检索。在 REQuestA 数据集（GTv6、DexV2）上评测，检索召回率最高提升
+    13.3%，nDCG 排序质量更高，代价是执行时间变长。
+  tags: [Information Retrieval, NLP, Requirement Analysis, BM25, BGE, RRF]
+  pdf: /assets/papers/seet2026-hybrid-qa-requirement-analysis.pdf

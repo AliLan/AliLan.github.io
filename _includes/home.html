@@ -37,6 +37,22 @@
   <div class="container">
     <div class="section-head">
       <div>
+        <p class="eyebrow">{% if zh %}学术{% else %}Publications{% endif %}</p>
+        <h2 class="h2">{% if zh %}研究{% else %}Research{% endif %}</h2>
+      </div>
+    </div>
+    <div class="stack">
+      {%- for r in site.data.research %}
+      {% include research-card.html r=r %}
+      {%- endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="section-head">
+      <div>
         <p class="eyebrow">{% if zh %}硕士课程{% else %}M.S. Computer Science{% endif %}</p>
         <h2 class="h2">{% if zh %}课程项目{% else %}Master Course Projects{% endif %}</h2>
       </div>

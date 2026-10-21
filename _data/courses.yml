@@ -34,6 +34,7 @@
         retrieval recall by up to 13.3% with higher nDCG ranking quality.
       summary_zh: >-
         SEET 2026 论文（合著并现场汇报）。结合 BM25、BGE 向量嵌入、倒数排名融合（RRF）和交叉编码器重排序做需求分析，在 387 组需求问答对上评测，检索召回率最高提升 13.3%，nDCG 排序质量也更高。
+      pdf: /assets/papers/seet2026-hybrid-qa-requirement-analysis.pdf
 
 - slug: advanced-programming-languages
   name: Advanced Programming Languages
