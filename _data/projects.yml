@@ -16,7 +16,8 @@
     prototyping.
   summary_zh: >-
     在 CSULB XR Lab 用 Blender、Unity3D 和 C# 制作的沉浸式清真寺室内 VR 漫游体验，借助 AI 辅助（MCP）工作流快速完成原型。
-  video: ""
+  video: /assets/videos/mosque-vr.mp4
+  poster: /assets/videos/mosque-vr-poster.jpg
   repo: ""
 
 - title: Food Label Guide

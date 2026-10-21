@@ -8,7 +8,7 @@
     {%- if p.video contains "youtube.com" or p.video contains "youtu.be" or p.video contains "vimeo.com" %}
     <iframe src="{{ p.video }}" title="{{ ptitle }}" allowfullscreen loading="lazy"></iframe>
     {%- else %}
-    <video src="{{ p.video | relative_url }}" controls preload="metadata"></video>
+    <video src="{{ p.video | relative_url }}" controls playsinline preload="none"{% if p.poster %} poster="{{ p.poster | relative_url }}"{% endif %}></video>
     {%- endif %}
   </div>
   {%- endif %}
