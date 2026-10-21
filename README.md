@@ -1,3 +1,3 @@
-# 丽华的博客
+# Lihua's Blog
 
-一个基于 Jekyll 的个人技术博客，用于记录研究生学习旅程和技术分享。
+A personal tech blog built with Jekyll, documenting my graduate school journey and sharing what I learn.
