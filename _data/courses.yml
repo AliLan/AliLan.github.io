@@ -13,12 +13,25 @@
   items: []
 
 - slug: semantic-web
-  name: Semantic Web
-  name_zh: 语义网
+  name: Semantic Web Technologies (CECS 571)
+  name_zh: 语义网技术（CECS 571）
   items:
-    - title: cornercase
-      summary: Semantic Web course project.
-      summary_zh: 语义网课程项目。
+    - title: "Project 1: LLM Semantic Risk Analysis of Corner-Case Driving Scenes"
+      title_zh: 项目一：用大语言模型对极端驾驶场景做语义风险分析
+      summary: >-
+        With Yongyan Liang. Compared Gemini 2.5 Flash, Claude Sonnet, and LLaMA 4
+        Scout on 100 corner-case driving scenarios (312 frames, six weather
+        conditions): each model described the scene as RDF/Turtle triples and
+        scored safety risks. Built a batched, concurrent Python pipeline and
+        evaluated against hand-labeled ground truth. Gemini had the best F1
+        (0.233) in every weather condition; Claude over-generated risks (0.859
+        hallucination rate).
+      summary_zh: >-
+        与 Yongyan Liang 合作。在 100 个极端驾驶场景（312 帧，六种天气条件）上对比 Gemini 2.5 Flash、Claude
+        Sonnet 和 LLaMA 4 Scout：让模型把场景描述成 RDF/Turtle 三元组并给安全风险打分。搭建了支持批处理和并发的 Python
+        评测流水线，并与人工标注的标准答案对比。Gemini 在所有天气条件下 F1 最高（0.233）；Claude
+        生成的风险过多，幻觉率达 0.859。
+      pdf: /assets/papers/cecs571-project1-llm-semantic-risk-report.pdf
       repo: https://github.com/AliLan/cornercase
 
 - slug: advanced-software-technology
