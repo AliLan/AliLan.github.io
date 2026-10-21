@@ -3,8 +3,8 @@
   title_zh: 基于混合 AI 问答系统的需求分析增强
   authors: Yongyan Liang, Lihua Lan, Muhammad Abdul Basit Ur Rahim
   venue: SEET 2026
-  course: CECS 524 Software Engineering
-  course_zh: CECS 524 软件工程
+  course: CECS 524 Advanced Software Technology
+  course_zh: CECS 524 高级软件技术
   summary: >-
     Extends the QAssist framework for requirement analysis with BGE embeddings,
     a BGE cross-encoder reranker, and hybrid lexical + semantic retrieval

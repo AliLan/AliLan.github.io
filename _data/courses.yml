@@ -35,8 +35,8 @@
       repo: https://github.com/AliLan/cornercase
 
 - slug: advanced-software-technology
-  name: Advanced Software Technology
-  name_zh: 高级软件技术
+  name: Advanced Software Technology (CECS 524)
+  name_zh: 高级软件技术（CECS 524）
   items:
     - title: Enhancing Requirement Analysis with Hybrid AI-Based Question Answering Systems
       title_zh: 基于混合 AI 问答系统的需求分析增强
